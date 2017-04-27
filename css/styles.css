@@ -152,6 +152,7 @@ a{
 
 .mdl-logo{
   -webkit-margin-end: 32px;
+  justify-content: center;
 }
 
 .btn-floating.btn-large{
