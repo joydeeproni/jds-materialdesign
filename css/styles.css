@@ -49,11 +49,17 @@ html,body{
   height: 151px;
 }
 
+.mdl-layout__header-row{
+  background-color: #263238;
+  color: white;
+}
 
 .mdl-layout__header .mdl-layout__drawer-button {
   width: 32px;
   height: 32px;
   margin-top: 14px;
+  background-color: #263238;
+  color: white;
 }
 
 .demo-navigation {
@@ -94,6 +100,67 @@ h3 {
 }
 
 h5{
+  font-family: 'Roboto';
   font-weight: 300;
   color: #484848;
+  -webkit-margin-start: 16px;
+  -webkit-margin-end: 16px;
+}
+
+h6{
+  font-weight: normal;
+  font-size: 20px;
+  -webkit-margin-start: 38px;
+  -webkit-margin-end: 38px;
+}
+
+p{
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-margin-start: 38px;
+  -webkit-margin-end: 38px;
+}
+
+a{
+  color: #00BCD4;
+}
+
+.demo-list-icon {
+  width: 300px;
+}
+
+.mdl-list{
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+
+.mdl-list__item{
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.mdl-mini-footer{
+  width: 100%;
+  height: 3px;
+  padding-top: 0px;
+  background-color: #263238;
+}
+
+.mdl-logo{
+  -webkit-margin-end: 32px;
+}
+
+.btn-floating.btn-large{
+  margin-bottom: 20px;
+}
+
+.btn-floating.btn-large i{
+  background-color: #00BCD4;
+}
+
+.jdslogo{
+  width: 200px;
+  height: 200px;
 }
