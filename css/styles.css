@@ -95,7 +95,7 @@ html,body{
 
 h3 {
     font-weight: 400;
-    color: #6d6d6d;
+    color: #263238;
     margin-top: 100;
 }
 
@@ -112,6 +112,7 @@ h6{
   font-size: 20px;
   -webkit-margin-start: 38px;
   -webkit-margin-end: 38px;
+  margin-top: 16px;
 }
 
 p{
@@ -163,4 +164,21 @@ a{
 .jdslogo{
   width: 200px;
   height: 200px;
+  fill:#263238;
+}
+
+/* work lists */
+
+.mdl-list__item--three-line .mdl-list__item-text-body{
+  display: -webkit-box;
+}
+
+#workex{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#skills{
+  font-size: 16px;
+  font-weight: 300;
 }

@@ -30,13 +30,14 @@
       z-index: 900;
     }
     </style>
+
   </head>
 
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Home</span>
+          <span class="mdl-layout-title">Work</span>
           <div class="mdl-layout-spacer"></div>        <!-- for space between title & option button-->
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
             <i class="material-icons">more_vert</i>
@@ -66,10 +67,10 @@
           </div> -->
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--white-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--white-400 material-icons" role="presentation">home</i>Home</a>
           <a class="mdl-navigation__link" href="about.html"><i class="mdl-color-text--white-400 material-icons" role="presentation">person</i>About</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--white-400 material-icons" role="presentation">image</i>Gallery</a>
-          <a class="mdl-navigation__link" href="work.html"><i class="mdl-color-text--white-400 material-icons" role="presentation">work</i>Work</a>
+          <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--white-400 material-icons" role="presentation">work</i>Work</a>
           <a class="mdl-navigation__link" href="life.html"><i class="mdl-color-text--white-400 material-icons" role="presentation">favorite</i>Life</a>
           <div class="mdl-layout-spacer"></div>
           <a class="mdl-navigation__link" href="https://github.com/joydeeproni/jds-materialdesign"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">code</i><span class="visuallyhidden">View Source</span></a>
@@ -78,36 +79,63 @@
 
       <main class="mdl-layout__content">
     <div class="page-content">
-      <center><h3>Hi, I'm Joydeep.</h3></center>
-      <center><h5>Welcome to my first material designed website. Thanks for stopping by.</h5></center>
+      <h6>Internships and Work Experience</h6>
+      <p>
+        <!-- Three Line List with secondary info and action -->
+<style>
+.demo-list-three {
+  width: 650px;
+}
+</style>
 
-      <!-- for the logo -->
-      <center><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      	 viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve" class="jdslogo">
-      <style type="text/css">
-      	.st0{stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
-      </style>
-      <polygon points="32.5,435.9 229.2,783.9 249.5,751.1 249.5,243.7 210.3,243.7 210.3,436.9 "/>
-      <polyline class="st0" points="289.3,688.6 570,243.7 529.9,243.7 289.3,243.7 289.3,685.4 "/>
-      <path class="st0" d="M278.5,782.2"/>
-      <polygon class="st0" points="289.3,243.7 289.3,688.6 570,243.7 "/>
-      <path class="st0" d="M549.4,580.7"/>
-      </svg>
-
+<ul class="demo-list-three mdl-list">
+  <li class="mdl-list__item mdl-list__item--three-line" id="workex">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person</i>
+      <span>Deterge Services</span>
+      <span class="mdl-list__item-text-body">
+        Developed fully functional website and Android app for online laundry service that operated locally for college students. Successfully ran the laundry business and operations for few months with 4 other partners.
+      </span>
+    </span>
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>Jindal Steel and Power Limited</span>
+      <span class="mdl-list__item-text-body">
+        Interned at Jindal's IT&C division. Learnt how computer systems assist process plant. Also learnt about instrumentation control and automation systems working in the steel plant.
+      </span>
+    </span>
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>Freelancing</span>
+      <span class="mdl-list__item-text-body">
+        Worked as a freelance graphic designer for lot of local businesses for designing creatives, logos, adverts and so.
+      </span>
+    </span>
+  </li>
+</ul>
+      </p>
+        <hr></hr>
+        <h6>Skills</h6>
+        <p>
+          <ul class="mdl-list" id="skills">
+            <li>Core Java</li>
+            <li>C++</li>
+            <li>Android</li>
+            <li>HTML/CSS</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Adobe XD</li>
+          </ul>
+        </p>
     </div>
-
-    <div class="fixed-action-btn vertical">
-    <a class="btn-floating btn-large cyan">
-      <i class="large material-icons">public</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating blue-grey"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a></li>
-      <li><a class="btn-floating blue-grey"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-      <li><a class="btn-floating blue-grey"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-      <li><a class="btn-floating blue-grey"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
-    </ul>
-  </div>
-
+    <hr></hr>
+    <h6>Extras</h6>
+    <p>
+    </p>
   </main>
 
   <footer class="mdl-mini-footer">
@@ -123,6 +151,5 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="https://use.fontawesome.com/8c89043e63.js"></script>
-
 </body>
 </html>
