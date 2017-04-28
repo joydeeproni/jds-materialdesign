@@ -80,6 +80,7 @@ html,body{
           align-items: center;
   color: #fff;
   font-weight: 500;
+  height: 64px;
 }
 
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
@@ -142,19 +143,6 @@ a{
   font-size: 16px;
 }
 
-.mdl-mini-footer{
-  width: 100%;
-  height: 3px;
-  padding-top: 0px;
-  background-color: #263238;
-  justify-content: center;
-}
-
-.mdl-logo{
-  -webkit-margin-end: 32px;
-  justify-content: center;
-}
-
 .btn-floating.btn-large{
   margin-bottom: 20px;
 }
@@ -171,6 +159,10 @@ a{
 
 /* work lists */
 
+.demo-list-three {
+  width: inherit;
+}
+
 .mdl-list__item--three-line .mdl-list__item-text-body{
   display: -webkit-box;
 }
@@ -183,4 +175,10 @@ a{
 #skills{
   font-size: 16px;
   font-weight: 300;
+}
+
+#extras{
+  font-weight: 300;
+  font-size: 16px;
+  line-spacing: 2em;
 }
