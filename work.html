@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="description" content="Material Designed personal profile website developed by Joydeep Sengupta (Jd.S)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="theme-color" content="#263238" />
     <title>Jd.S: Material Designed</title>
@@ -44,7 +44,7 @@
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-            <li class="mdl-menu__item">Contact</li>
+              <li class="mdl-menu__item"><a href="contact.html" style="color:#263238;">Contact</a></li>
           </ul>
         </div>
       </header>
@@ -86,17 +86,17 @@
 <ul class="demo-list-three mdl-list">
   <li class="mdl-list__item mdl-list__item--three-line" id="workex">
     <span class="mdl-list__item-primary-content">
-      <i class="material-icons mdl-list__item-avatar">person</i>
-      <span>Deterge Services</span>
+      <i class="material-icons mdl-list__item-avatar">business</i>
+      <span>Deterge Services | Sept 2015</span>
       <span class="mdl-list__item-text-body">
-        Developed fully functional website and Android app for online laundry service that operated locally for college students. Successfully ran the laundry business and operations for few months with 4 other partners.
+        Developed fully functional <a href="www.deterge.in">website</a> and Android app for online laundry service that operated locally for college students. Successfully ran the laundry business and operations for few months with 4 other partners.
       </span>
     </span>
   </li>
   <li class="mdl-list__item mdl-list__item--three-line" id="workex">
     <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>Jindal Steel and Power Limited</span>
+      <i class="material-icons  mdl-list__item-avatar">business</i>
+      <span>Jindal Info Solutions | Jun 2015</span>
       <span class="mdl-list__item-text-body">
         Interned at Jindal's IT&C division. Learnt how computer systems assist process plant. Also learnt about instrumentation control and automation systems working in the steel plant.
       </span>
@@ -104,10 +104,10 @@
   </li>
   <li class="mdl-list__item mdl-list__item--three-line" id="workex">
     <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>Freelancing</span>
+      <i class="material-icons  mdl-list__item-avatar">business</i>
+      <span>Freelancing | Oct 2016</span>
       <span class="mdl-list__item-text-body">
-        Worked as a freelance graphic designer for lot of local businesses for designing creatives, logos, adverts and so.
+        Worked as a freelance graphic designer since an year for lot of local businesses for designing creatives, logos, banners and so on.
       </span>
     </span>
   </li>
@@ -116,14 +116,31 @@
         <hr></hr>
         <h6>Skills</h6>
         <p>
-          <ul class="mdl-list" id="skills">
-            <li class="mdl-list__item">Core Java</li>
-            <li class="mdl-list__item">C++</li>
-            <li class="mdl-list__item">Android</li>
-            <li class="mdl-list__item">HTML/CSS</li>
-            <li class="mdl-list__item">Photoshop</li>
-            <li class="mdl-list__item">Illustrator</li>
-            <li class="mdl-list__item">Adobe XD</li>
+          <ul class="mdl-list" id="skills" style="font-size:15px;">Technical
+            <div class="mdl-layout-spacer" style="height:15px;"></div>
+            <div id="java" class="mdl-progress mdl-js-progress"></div>
+              <li class="mdl-list__item">Core Java</li>
+            <div id="cpp" class="mdl-progress mdl-js-progress"></div>
+              <li class="mdl-list__item">C++</li>
+              <div id="html" class="mdl-progress mdl-js-progress"></div>
+                <li class="mdl-list__item">HTML/CSS</li>
+              <div id="android" class="mdl-progress mdl-js-progress"></div>
+                <li class="mdl-list__item">Android</li>
+                <div id="ps" class="mdl-progress mdl-js-progress"></div>
+                  <li class="mdl-list__item">Photoshop</li>
+                <div id="ai" class="mdl-progress mdl-js-progress"></div>
+                  <li class="mdl-list__item">Illustrator</li>
+                  <div id="xd" class="mdl-progress mdl-js-progress"></div>
+                    <li class="mdl-list__item">Adobe XD</li>
+          </ul>
+          <ul class="mdl-list" id="skills" style="font-size:15px;">Non Technical
+            <div class="mdl-layout-spacer" style="height:15px;"></div>
+            <div id="speaking" class="mdl-progress mdl-js-progress"></div>
+              <li class="mdl-list__item">Speaking/Oratorship</li>
+            <div id="mgmt" class="mdl-progress mdl-js-progress"></div>
+              <li class="mdl-list__item">Management</li>
+              <div id="creativity" class="mdl-progress mdl-js-progress"></div>
+                <li class="mdl-list__item">Creativity</li>
           </ul>
         </p>
     </div>
@@ -147,5 +164,37 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="https://use.fontawesome.com/8c89043e63.js"></script>
+  <script>
+  document.querySelector('#java').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(60);
+  });
+  document.querySelector('#cpp').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(50);
+  });
+  document.querySelector('#html').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(70);
+  });
+  document.querySelector('#android').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(60);
+  });
+  document.querySelector('#ps').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(80);
+  });
+  document.querySelector('#ai').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(60);
+  });
+  document.querySelector('#xd').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(60);
+  });
+  document.querySelector('#speaking').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(90);
+  });
+  document.querySelector('#mgmt').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(70);
+  });
+  document.querySelector('#creativity').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(80);
+  });
+  </script>
 </body>
 </html>

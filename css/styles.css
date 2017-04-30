@@ -177,6 +177,11 @@ a{
   font-weight: 300;
 }
 
+.mdl-progress{
+  width: 250px;
+  margin-left:16px;
+}
+
 #extras{
   font-weight: 300;
   font-size: 16px;
