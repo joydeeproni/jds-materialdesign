@@ -191,7 +191,7 @@ a{
 /* Image cards */
 
 .demo-card-wide.mdl-card {
-  width: 97%;
+  width: 100%;
   margin-top: 32px;
 }
 .demo-card-wide > .mdl-card__title {
@@ -201,4 +201,8 @@ a{
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
+}
+
+#gallery{
+  margin-top: 56px;
 }
