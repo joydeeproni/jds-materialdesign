@@ -187,3 +187,20 @@ a{
   font-size: 16px;
   line-spacing: 2em;
 }
+
+/* Image cards */
+
+.demo-card-wide.mdl-card {
+  width: 97%;
+  margin-top: 32px;
+  margin-left: 16px;
+  margin: 16px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../images/gallery/one.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
