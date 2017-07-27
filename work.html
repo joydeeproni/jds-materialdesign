@@ -33,9 +33,30 @@
     }
   </style>
 
+<!-- For preloader -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script>
+    jQuery(window).load(function() {
+      jQuery(".jds-spinner").fadeOut(500);
+    });
+  </script>
+
+  <!-- For preloader for browsers without Javascript support-->
+
+  <noscript>
+    <style>.jds-spinner { display: none; } </style>
+</noscript>
+
+<!-- For preloader ends -->
+
 </head>
 
 <body>
+
+  <div class="jds-spinner"></div> <!-- For preloader -->
+
   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
     <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
       <div class="mdl-layout__header-row">
@@ -82,10 +103,9 @@
 
     <main class="mdl-layout__content">
       <div class="page-content">
-        <h6>Internships and Work Experience</h6>
-        <p>
-          <!-- Three Line List with secondary info and action -->
-          <ul class="demo-list-three mdl-list">
+        <h6 class="animate-in-01">Internships and Work Experience</h6>
+        <!-- Three Line List with secondary info and action -->
+        <!--      <ul class="demo-list-three mdl-list">
             <li class="mdl-list__item mdl-list__item--three-line" id="workex">
               <span class="mdl-list__item-primary-content">
       <i class="material-icons mdl-list__item-avatar">business</i>
@@ -122,12 +142,41 @@
       </span>
               </span>
             </li>
-          </ul>
+          </ul> -->
+
+        <ul class="collapsible popout animate-in-02" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header ">Designer at Tikii Marketing Services | Current</div>
+            <div class="collapsible-body">
+              <p>Working as a designer for digital marketing & branding services company based in Kolkata.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">UI/UX Designer & Developer at Deterge Services | Sept 2015</div>
+            <div class="collapsible-body">
+              <p>Developed fully functional <a href="www.deterge.in">website</a> and Android app for online laundry service that operated locally for college students. Successfully ran the laundry business and operations for few months with 4 other partners.
+                I was responsible for developing and designing the Android application. I designed and mainly focused on the UI/UX of the Android application.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header ">Summer Intern at Jindal Info Solutions | July 2015</div>
+            <div class="collapsible-body">
+              <p>Interned at Jindal Steel & Power Limited, Angul IT&C division. Learnt how computer systems assist process plant. Also learnt about instrumentation control and automation systems working in the steel plant.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header ">Freelance Designer | Oct 2016</div>
+            <div class="collapsible-body">
+              <p> Freelanced for lot of local businesses and restaurants, designed posters, logos, adverts, full range of social media posts, menu, stationery, UI for websites and what not.</p>
+            </div>
+          </li>
+        </ul>
+
         </p>
-        <hr></hr>
-        <h6>Skills</h6>
+        <hr class="animate-in-03"></hr>
+        <h6 class="animate-in-01">Skills</h6>
         <p>
-          <ul class="mdl-list" id="skills" style="font-size:15px;">Tools & Technologies
+          <ul class="mdl-list animate-in-02" id="skills" style="font-size:15px;">Tools & Technologies
             <div class="mdl-layout-spacer" style="height:15px;"></div>
             <div id="java" class="mdl-progress mdl-js-progress"></div>
             <li class="mdl-list__item">Core Java</li>
@@ -163,18 +212,35 @@
           </ul>
         </p>
       </div>
-      <hr></hr>
-      <h6>Extras</h6>
-      <p>
-        <ul class="mdl-list" id="extras">
-          <li class="mdl-list__item">Worked as social media and PR manager of SOA Music Club, official music community of Siksha O Anusandhan University, Bhubaneswar.</li>
-          <li class="mdl-list__item">Performed on live television and radio several times.</li>
-          <li class="mdl-list__item">Won accolades in national level quiz and debate competitions.</li>
-          <li class="mdl-list__item">Attended national level college festivals like Mood Indigo at Mumbai, Spring Fest at Kharagpur to name a few.</li>
-        </ul>
-      </p>
-      <p>
-      </p>
+      <hr class="animate-in-03"></hr>
+      <h6 class="animate-in-01">Extras</h6>
+      <ul class="collapsible popout animate-in-02" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header ">Social Media Manager of SOA Music Club, Bhubaneswar</div>
+          <div class="collapsible-body">
+            <p>Worked as social media and PR manager of SOA Music Club, official music community of Siksha O Anusandhan University, Bhubaneswar.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">Performed on live national television & community radio channels.</div>
+          <div class="collapsible-body">
+            <p>Performed with my college band on national television channel OTV & News7. Also been featured at college's community radio Voice of SOA.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header ">Narrator in documentary film</div>
+          <div class="collapsible-body">
+            <p>Voiced for documentary film based on Bhubaneswar city <a href="https://www.youtube.com/watch?v=d-2Ozgp31-w">"Bhubaneswar Blues"</a></p> which was featured at Basuda Film Festival in 2015.
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header ">Performer at national level college events</div>
+          <div class="collapsible-body">
+            <p>Performed at national level college events like Spring Fest at IIT Kharagpur & Mood Indigo at IIT Bombay to name a few.</p>
+          </div>
+        </li>
+      </ul>
+
     </main>
   </div>
 

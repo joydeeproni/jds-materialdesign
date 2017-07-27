@@ -32,9 +32,32 @@
       z-index: 900;
     }
   </style>
+
+  		<!-- For preloader -->
+
+  		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  		  <script>
+  		    jQuery(window).load(function() {
+  		      jQuery(".jds-spinner").fadeOut(500);
+  		    });
+  		  </script>
+
+  		  <!-- For preloader for browsers without Javascript support-->
+
+  		  <noscript>
+  		    <style>.jds-spinner { display: none; } </style>
+  		</noscript>
+
+  		<!-- For preloader ends -->
+
 </head>
 
 <body>
+
+    <div class="jds-spinner"></div> <!-- For preloader -->
+
+
   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
     <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
       <div class="mdl-layout__header-row">
@@ -82,48 +105,53 @@
     <!-- Main content -->
 
     <main class="mdl-layout__content">
-  <div class="page-content">
+      <div class="mdl-grid animate-in-01">
+        <div class="card mdl-cell mdl-cell--6-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop animate-in-01">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/blog/1.jpg">
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Design of Everyday Things<i class="material-icons right">close</i></span>
+            <p>Reading on progress.</p>
+          </div>
+        </div>
+        <div class="card mdl-cell mdl-cell--6-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop animate-in-02">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/blog/2.jpg">
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Design's Iron Fist<i class="material-icons right">close</i></span>
+            <p class="booksum">Reading on progress.</p>
+          </div>
+        </div>
+        <div class="card mdl-cell mdl-cell--6-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop animate-in-03">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/blog/3.jpg">
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Rich Dad Poor Dad<i class="material-icons right">close</i></span>
+            <p class="booksum">Reading on progress.</p>
+          </div>
+        </div>
+        <div class="card mdl-cell mdl-cell--6-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop animate-in-03">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/blog/4.jpg">
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Watchmen<i class="material-icons right">close</i></span>
+            <p class="booksum">Reading on progress.</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/blog/1.jpg">
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Design of Everyday Things<i class="material-icons right">close</i></span>
-      <p>Reading on progress.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="images/blog/2.jpg">
-  </div>
-  <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Design's Iron Fist<i class="material-icons right">close</i></span>
-    <p class="booksum">Reading on progress.</p>
-  </div>
-</div>
-
-<div class="card">
-  <div class="card-image waves-effect waves-block waves-light">
-  <img class="activator" src="images/blog/3.jpg">
-</div>
-<div class="card-reveal">
-  <span class="card-title grey-text text-darken-4">Rich Dad Poor Dad<i class="material-icons right">close</i></span>
-  <p class="booksum">Reading on progress.</p>
-</div>
-</div>
-
-</main>
-</div>
-  <!-- Main content ends -->
+    </main>
 
 
-  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="https://use.fontawesome.com/8c89043e63.js"></script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/8c89043e63.js"></script>
 </body>
 
 </html>

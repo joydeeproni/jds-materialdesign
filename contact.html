@@ -31,9 +31,32 @@
       z-index: 900;
     }
     </style>
+
+    		<!-- For preloader -->
+
+    		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    		  <script>
+    		    jQuery(window).load(function() {
+    		      jQuery(".jds-spinner").fadeOut(500);
+    		    });
+    		  </script>
+
+    		  <!-- For preloader for browsers without Javascript support-->
+
+    		  <noscript>
+    		    <style>.jds-spinner { display: none; } </style>
+    		</noscript>
+
+    		<!-- For preloader ends -->
+
   </head>
 
   <body>
+
+      <div class="jds-spinner"></div> <!-- For preloader -->
+
+
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row mdl-color--blue-grey-900">
