@@ -32,6 +32,18 @@
   <link rel="stylesheet" href="css/github-prettify-theme.css">
   <script src="js/site.js"></script>
   <script src="https://use.fontawesome.com/b63734bc8f.js"></script>
+  <!-- For preloader -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    jQuery(window).load(function() {
+      jQuery(".jds-spinner").fadeOut(500);
+    });
+  </script>
+  <!-- For preloader for browsers without Javascript support-->
+  <noscript>
+        <style>.jds-spinner { display: none; } </style>
+    </noscript>
+  <!-- For preloader ends -->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,7 +52,8 @@
 </head>
 
 <body class="code-snippets-visible">
-
+  <!-- For preloader -->
+  <div class="jds-spinner"></div>
   <header>
     <!-- Navigation
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
