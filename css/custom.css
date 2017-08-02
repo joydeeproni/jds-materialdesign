@@ -128,7 +128,6 @@ nav.primary ul li a:hover {
   color: black;
 }
 
-
 /* Phone */
 
 .phone {
@@ -161,7 +160,7 @@ nav.primary ul li a:hover {
 
 .portfolio-section {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .portfolio-section-header {
@@ -428,4 +427,5 @@ nav.primary ul li a:hover {
     background-color: white;
     -webkit-appearance: none;
   }
+
 }
