@@ -1,208 +1,180 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang=en>
 
 <head>
 
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset=utf-8>
+  <title>Joydeep Sengupta</title>
+  <meta content="" name=description>
+  <meta content="" name=author>
 
-	<!-- Google Tag Manager -->
-	<script>
-		(function(w, d, s, l, i) {
-			w[l] = w[l] || [];
-			w[l].push({
-				'gtm.start': new Date().getTime(),
-				event: 'gtm.js'
-			});
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true;
-			j.src =
-				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-T7T6HKK');
-	</script>
-	<!-- End Google Tag Manager -->
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta content="width=device-width,initial-scale=1" name=viewport>
 
-	<!-- Google Analytics -->
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600" rel=stylesheet>
 
-		ga('create', 'UA-102810295-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	<!-- End Google Analytics -->
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href=dist/css/normalize.css rel=stylesheet>
+  <link href=dist/css/skeleton.css rel=stylesheet>
+  <link href=css/custom.css rel=stylesheet>
+  <link href=path/to/font-awesome/css/font-awesome.min.css rel=stylesheet>
 
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js></script>
+  <script src=https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js></script>
+  <link href=css/github-prettify-theme.css rel=stylesheet>
+  <script src=js/site.js></script>
+  <script src=https://use.fontawesome.com/b63734bc8f.js></script>
+  <!-- Typewriter script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>var TxtType=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1};TxtType.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var i=this,s=200-100*Math.random();this.isDeleting&&(s/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=500):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("typewrite"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-type"),s=t[e].getAttribute("data-period");i&&new TxtType(t[e],JSON.parse(i),s)}var n=document.createElement("style");n.type="text/css",n.innerHTML=".typewrite > .wrap { border-right: 0.08em solid #fff}",document.body.appendChild(n)}</script>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Material Designed personal profile website developed by Joydeep Sengupta (Jd.S)">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<meta name="keywords" content="Joydeep Sengupta,joydeep,sengupta,jds,jd.s,material design profile,material design portfolio,jds material design,joydeep sengupta material design,joydeep material design, joydeep sengupta profile, joydeep progile, jds profile,jds website,jds portfolio"
-	/>
-	<meta name="theme-color" content="#263238" />
-	<meta name="google-site-verification" content="ILDghjZn05RFX2orOrvwvl6J-ymUFpLnz2k94MWDY_Q" />
-	<title>Jd.S: Material Designed</title>
-
-
-
-	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-	<!--
-		<link rel="canonical" href="http://www.example.com/">
-		-->
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<style>
-		#view-source {
-			position: fixed;
-			display: block;
-			right: 0;
-			bottom: 0;
-			margin-right: 40px;
-			margin-bottom: 40px;
-			z-index: 900;
-		}
-	</style>
-
-	<!-- For preloader -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-	<script>
-		jQuery(window).load(function() {
-			jQuery(".jds-spinner").fadeOut(500);
-		});
-	</script>
-
-	<!-- For preloader for browsers without Javascript support-->
-
-	<noscript>
-		    <style>.jds-spinner { display: none; } </style>
-		</noscript>
-
-	<!-- For preloader ends -->
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href=/images/favicon.png rel=icon type=image/png>
 
 </head>
 
-<body>
+<body class=code-snippets-visible>
 
-	<div class="jds-spinner"></div> <!-- For preloader -->
+  <header>
+    <!-- Navigation
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class=navigation>
+      <nav class="container primary">
+        <div class="columns sixteen">
+          <ul>
+            <li><a href=#intro class=nav-link>About</a></li>
+            <li><a href=#work class=nav-link>Work</a></li>
+            <li><a href=# class=nav-link>Blog</a></li>
+            <li><a href=#contact class=nav-link>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7T6HKK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+    <!-- Logo
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container logo">
+      <svg data-name="Layer 1" id=Layer_1 viewBox="0 0 35.28 35.28" xmlns=http://www.w3.org/2000/svg><defs><style>.cls-1,.cls-3{stroke:#000}.cls-1,.cls-3,.cls-4{stroke-miterlimit:10}.cls-1{stroke-width:.75px}.cls-2{fill:#fff}.cls-3,.cls-4{fill:none}.cls-4{stroke:#fff}</style></defs><title>jds-logo</title><circle cx=17.64 cy=17.64 r=17.64 /><path class=cls-1 d=M45,29.69 transform="translate(-7.35 -5.67)"/><polygon class=cls-2 points="4.26 9.9 17.64 33.09 31.03 9.9 4.26 9.9"/><polyline class=cls-3 points="17.64 34.65 17.64 16.36 4.39 16.36"/><line class=cls-3 x1=17.64 x2=17.64 y1=9.05 y2=21.84 /><path class=cls-4 d=M54.19,32.36 transform="translate(-7.35 -5.67)"/></svg>
+    </div>
+  </header>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class=container>
+    <section class=header>
+      <h2 class=title>
+        <a href="" class=typewrite data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am a Designer.", "I build Websites.", "I love UX." ]'>
+    <span class=wrap></span>
+  </a>
+      </h2>
+      <p>Thanks for stopping by.</p>
+      <a href=portfolio/portfolio.html class="button button-primary">Portfolio</a>
+      <div class="row value-props">
+        <div class="columns four value-prop">
+          <img class=value-img src=images/idea.png> Always open to opportunities to positively impact people on broad scale.
+        </div>
+        <div class="columns four value-prop">
+          <img class=value-img src=images/computer.png> Passionate about new innovations and technologies that affect billion lives.
+        </div>
+        <div class="columns four value-prop">
+          <img class=value-img src=images/graphic.png> Focussed on user-centered design methodologies that balance user needs and business goals.
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <div class=docs-section id=intro>
+      <h6 class=docs-header>About</h6>
+      <p>I'm Joydeep Sengupta, designer from India who works with businesses, startups and anyone who believe in user experience that want to increase their bottom line through the power of great design. I design and build interfaces, primarily for web and
+        Android. With bachelor's degree in computer science, my tech savvines comes in handy in development process. I aspire to design and build experiences that are meaningful making technology simpler and delightful to use. You can download my resume
+        from <a href=#>here</a>.</p>
+    </div>
+
+    <!-- Work -->
+    <div class=docs-section id=work>
+      <h6 class=docs-header>Work</h6>
+      <p>I'm a designer specializing in UI/UX and web design. I also enjoy branding, graphic design and web development. I like to keep things minimal and focus on creating simple and usable experiences.</p>
+      <p>These are few people that I've worked with:</p>
+      <ul>
+        <li><b>Designer</b> at Tikii Marketing Services | Jun 2017
+          <p>Tikii is an early stage startup that helps businesses build their digital online presence and visual identity. I'm in charge of all the design activities including engagement creatives for social media, wireframes and mockups for web and visual
+            branding and identity.</p>
+        </li>
+        <li><b>UI/UX Developer</b> at Deterge Services | Sep 2015 - Feb 2017
+          <p>Started an online laundry service for college students. I was a part of early ideation, user experience, wireframing, protoyping and visual design of the app. I was also responsible for designing visual identity and branding for the company.</p>
+        </li>
+        <li><b>Freelance Designer</b> for various clients | Since Oct 2016
+          <p>I worked with startups, local businesses and restaurants to design their visual marketing materials, branding, user experience and other visual motifs.</p>
+        </li>
+      </ul>
+      <p>You can check out my <a href=/portfolio/portfolio.html>portfolio</a> or my <a href=#>Behance</a> profile for a better idea about my work.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class=docs-section id=contact>
+      <h6 class=docs-header>Contact</h6>
+      <p>Email is the best way to reach me: joydeep.roni@gmail.com. But you can feel free to fill this form.</p>
+      <form>
+        <div class=row>
+          <div class="columns six">
+            <label for=exampleEmailInput>Your email</label>
+            <input type=email class=u-full-width id=exampleEmailInput placeholder=joydeep.roni@gmail.com>
+          </div>
+          <div class="columns six">
+            <label for=exampleRecipientInput>Reason for contacting</label>
+            <select class=u-full-width id=contactform>
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>
+          </div>
+        </div>
+        <label for=exampleMessage>Message</label>
+        <textarea class=u-full-width id=exampleMessage placeholder="Hi Joydeep..."></textarea>
+        <label class=example-send-yourself-copy>
+    <input type=checkbox>
+    <span class=label-body>Send a copy to yourself</span>
+  </label>
+        <input type=submit class="button button-primary" value=Submit>
+      </form>
+
+      <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+      <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+    </div>
+
+    <div class=container>
+      <div class="row social">
+        <div class="columns social twelve">
+          <ul>
+            <li><a href=https://www.facebook.com/joydeep.roni class=social-icon> <i class="fa fa-facebook"></i></a></li>
+            <li><a href=https://twitter.com/joydeeproni class=social-icon> <i class="fa fa-twitter"></i></a></li>
+            <li><a href=https://www.instagram.com/joydeep.roni/ class=social-icon> <i class="fa fa-instagram"></i></a></li>
+            <li><a href=https://www.linkedin.com/in/joydeeproni class=social-icon> <i class="fa fa-linkedin"></i></a></li>
+            <li><a href=https://www.behance.net/joydeepronff6e class=social-icon> <i class="fa fa-behance"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class=footer>
+        Jd.S © Copyright. 2017
+      </div>
+    </footer>
 
 
-	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-		<header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-			<div class="mdl-layout__header-row">
-				<span class="mdl-layout-title">Home</span>
-				<div class="mdl-layout-spacer"></div>
-				<!-- for space between title & option button-->
-				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-						<i class="material-icons">more_vert</i>
-					</button>
-				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-					<li class="mdl-menu__item"><a href="contact.html" style="color:#263238;">Contact</a></li>
-				</ul>
-			</div>
-		</header>
+  </div>
 
-		<div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-			<header class="demo-drawer-header">
-				<img src="images/user.png" class="demo-avatar">
-				<div class="mdl-layout-spacer"></div>
-				<span>Joydeep Sengupta</span>
-				<span>joydeep.roni@gmail.com</span>
-
-				<!--  <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-							<i class="material-icons" role="presentation">arrow_drop_down</i>
-							<span class="visuallyhidden">Accounts</span>
-						</button>
-						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-							<li class="mdl-menu__item">hello@example.com</li>
-							<li class="mdl-menu__item">info@example.com</li>
-							<li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
-						</ul>
-					</div> -->
-			</header>
-			<nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-				<a class="mdl-navigation__link" href="#"><i class="mdl-color-text--white-400 material-icons" role="presentation">home</i>Home</a>
-				<a class="mdl-navigation__link" href="about.html"><i class="mdl-color-text--white-400 material-icons" role="presentation">person</i>About</a>
-				<a class="mdl-navigation__link" href="http://joydeeproni.portfoliobox.net"><i class="mdl-color-text--white-400 material-icons" role="presentation">image</i>Gallery</a>
-				<a class="mdl-navigation__link" href="work.html"><i class="mdl-color-text--white-400 material-icons" role="presentation">work</i>Work</a>
-				<a class="mdl-navigation__link" href="life.html"><i class="mdl-color-text--white-400 material-icons" role="presentation">favorite</i>Life</a>
-				<div class="mdl-layout-spacer"></div>
-				<a class="mdl-navigation__link" href="https://github.com/joydeeproni/jds-materialdesign">
-						<i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">code</i>
-						<span class="visuallyhidden">View Source</span>
-					</a>
-			</nav>
-		</div>
-
-		<main class="mdl-layout__content">
-			<div class="page-content">
-				<center>
-					<h3 class=animate-in-01>Hi, I'm Joydeep.</h3></center>
-				<center>
-					<h5 class=animate-in-02>Welcome to my material designed website. Head on to Gallery to check out my work.</h5></center>
-				<center>
-					<h5 class=animate-in-03> You can also visit my <a href="https://www.behance.net/joydeepronff6e">Behance</a> profile.</h5></center>
-
-				<!-- for the logo -->
-				<center><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve" class="jdslogo">
-			<style type="text/css">
-				.st0{stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
-			</style>
-			<polygon points="32.5,435.9 229.2,783.9 249.5,751.1 249.5,243.7 210.3,243.7 210.3,436.9 "/>
-			<polyline class="st0" points="289.3,688.6 570,243.7 529.9,243.7 289.3,243.7 289.3,685.4 "/>
-			<path class="st0" d="M278.5,782.2"/>
-			<polygon class="st0" points="289.3,243.7 289.3,688.6 570,243.7 "/>
-			<path class="st0" d="M549.4,580.7"/>
-			</svg>
-
-					<center>
-						<h5 class="animate-in-04">Handmade with <i class="mdl-color-text--white-400 material-icons" role="presentation">favorite</i> in India.</h5></center>
-
-			</div>
-
-			<div class="fixed-action-btn vertical">
-				<a class="btn-floating btn-large cyan">
-			<i class="large material-icons">public</i>
-		</a>
-				<ul>
-					<li><a class="btn-floating blue-grey" href="https://www.facebook.com/joydeep.roni"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a></li>
-					<li><a class="btn-floating blue-grey" href="https://www.instagram.com/joydeep.roni"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-					<li><a class="btn-floating blue-grey" href="https://www.twitter.com/joydeeproni"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-					<li><a class="btn-floating blue-grey" href="https://www.linkedin.com/in/joydeeproni"><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</a></li>
-					<li><a class="btn-floating blue-grey" href="https://www.github.com/joydeeproni"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
-					<li><a class="btn-floating blue-grey" href="https://www.behance.net/joydeepronff6e"><i class="fa fa-behance" aria-hidden="true"></i>Behance</a></li>
-				</ul>
-			</div>
-
-		</main>
-	</div>
-
-	<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script src="https://use.fontawesome.com/8c89043e63.js"></script>
-
-</body>
-
-</html>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->

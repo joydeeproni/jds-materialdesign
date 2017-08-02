@@ -1,0 +1,435 @@
+/* Navigation bar */
+
+nav.primary {
+  display: table;
+
+  margin: 0 auto;
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+nav.primary ul, nav.primary ul li {
+  margin: 0px;
+}
+
+nav.primary ul li {
+  position: relative;
+
+  display: inline;
+  float: center;
+}
+
+nav.primary ul li a {
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 14px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  background: ##999999;
+  font-size: 60%;
+}
+
+nav.primary ul li a:hover {
+  color: #45ada8;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+/* Logo */
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 5rem;
+}
+
+
+/* Header */
+
+.container {
+  max-width: 800px;
+}
+
+.header {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.typewrite{
+  color: #000;
+}
+
+.typewrite:hover{
+  color: #000;
+}
+
+/* Three pointer headliner */
+
+.value-prop {
+  margin-top: 1rem;
+}
+
+.value-props {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.value-img {
+  display: block;
+  text-align: center;
+  margin: 2.5rem auto 0;
+}
+
+
+/* Sections */
+
+.docs-header {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  font-weight: 600;
+}
+
+.docs-section {
+  border-top: 1px solid #eee;
+  padding: 4rem 0;
+  margin-bottom: 0;
+}
+
+
+/* Button */
+
+.button.button-primary {
+  background-color: #45ada8;
+  border-color: #45ada8;
+}
+
+.button.button-primary:hover {
+  background-color: #fff;
+  border-color: #45ada8;
+  color: #45ada8;
+  transition: 0.5s;
+}
+
+.button.button-secondary {
+  border-color: black;
+  color: black;
+}
+
+.button.button-secondary:hover {
+  border-color: #45ada8;
+  color: #45ada8;
+  transition: 0.5s;
+}
+
+.button.button-secondary.disabled:hover {
+  border-color: black;
+  color: black;
+}
+
+
+/* Phone */
+
+.phone {
+  position: relative;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.hero {
+  padding: 2rem 0 7rem;
+  text-align: center;
+}
+
+
+/* Phone */
+
+.charts {
+  position: relative;
+  max-width: 80%;
+  max-height: 300px;
+}
+
+.charts-hero {
+  padding: 2rem 0 0rem;
+  text-align: center;
+}
+
+
+/* Portfolio Sections */
+
+.portfolio-section {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.portfolio-section-header {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.portfolio-section-description {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-section-screenshot-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  height: 250px;
+}
+
+.portfolio-section-screenshot {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-section-screenshot.blank {
+  width: auto;
+  position: absolute;
+  background: #eee;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+}
+
+.image-preview {
+  display: inline;
+  max-width: 30%;
+}
+
+.charts {
+  display: inline;
+  max-width: 100%;
+}
+
+.full-width-image {
+  width: 100%;
+}
+
+.table-wrapper {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 8px;
+}
+
+
+/* Social Icons */
+
+.social {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.social a {
+  color: black;
+}
+
+.social a:hover{
+  color: #45ada8;
+  transition: 0.5s;
+}
+
+/* Social Icons */
+
+#contactform {
+  background-color: white;
+  -webkit-appearance: none;
+}
+
+
+/* Footer */
+
+.footer {
+  font-size: 10px;
+  text-align: center;
+}
+
+
+/* Larger than phone */
+
+@media (min-width: 550px) {
+  .header {
+    margin-top: 5rem;
+  }
+  .value-props {
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+  }
+  .value-img {
+    margin-bottom: 1rem;
+  }
+  .example-grid .column, .example-grid .columns {
+    margin-bottom: 1.5rem;
+  }
+  .docs-section {
+    padding: 2rem 0;
+  }
+  .example-send-yourself-copy {
+    float: right;
+    margin-top: 12px;
+  }
+  .portfolio-section-screenshot-wrapper {
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    left: 0;
+    max-height: none;
+  }
+  .phone {
+    position: relative;
+    max-width: 70%;
+    margin: 8rem 4rem 7rem;
+  }
+  .hero {
+    padding: 8rem 0 7rem;
+    text-align: left;
+  }
+  .charts {
+    position: relative;
+    max-width: 100%;
+    margin: -3rem auto -3rem;
+    float: left;
+  }
+  .charts-hero {
+    padding: 8rem 0 7rem;
+    text-align: left;
+  }
+  .full-width-image {
+    width: 100%;
+  }
+
+  #contactform {
+    background-color: white;
+    -webkit-appearance: none;
+  }
+
+  .footer {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+  /* Navbar */
+  .navbar+.docs-section {
+    border-top-width: 0;
+  }
+  .navbar, .navbar-spacer {
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    background: #fff;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .navbar-spacer {
+    display: none;
+  }
+  .navbar>.container {
+    width: 100%;
+  }
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  .navbar-item {
+    position: relative;
+    float: center;
+    margin-bottom: 0;
+  }
+  .navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222;
+  }
+  .navbar-link.active {
+    color: #33C3F0;
+  }
+  .has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .has-docked-nav .navbar-spacer {
+    display: block;
+  }
+  /* Re-overiding the width 100% declaration to match size of % based container */
+  .has-docked-nav .navbar>.container {
+    width: 80%;
+  }
+  nav.primary ul li a {
+    font-size: 90%;
+  }
+  .phone {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem auto -12rem;
+    float: right;
+  }
+  .hero {
+    padding: 8rem 0 7rem;
+    text-align: left;
+  }
+  .image-preview {
+    display: inline;
+    max-width: 33%;
+  }
+  .charts {
+    position: relative;
+    max-width: 100%;
+    margin: -3rem auto -3rem;
+    float: left;
+    width: 100%;
+  }
+  .charts-hero {
+    padding: 8rem 0 9rem;
+    text-align: left;
+  }
+  .full-width-image {
+    width: 100%;
+  }
+  .table-wrapper {
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    width: 100%;
+    margin: auto;
+  }
+
+  #contactform {
+    background-color: white;
+    -webkit-appearance: none;
+  }
+}
