@@ -9,10 +9,8 @@
 /* Navigation bar */
 nav.primary {
   display: table;
-
   margin: 0 auto;
   margin-top: 20px;
-
   text-align: center;
 }
 nav.primary ul, nav.primary ul li {
@@ -42,7 +40,7 @@ nav.primary ul li a:hover {
 }
 /* Logo */
 .logo {
-  width: 100px;
+  width: 110px;
   height: 100px;
   margin-top: 5rem;
 }
@@ -65,38 +63,31 @@ nav.primary ul li a:hover {
 }
 
 /* Three pointer headliner */
-
-.value-prop {
-  margin-top: 1rem;
-}
-
 .value-props {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-
+.value-prop {
+  margin-top: 1rem;
+}
 .value-img {
   display: block;
   text-align: center;
-  margin: 2.5rem auto 0;
+  margin: 2.5rem auto 10px;
+  height: 65px;
 }
-
-
 /* Sections */
-
 .docs-header {
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: .2rem;
   font-weight: 600;
 }
-
 .docs-section {
   border-top: 1px solid #eee;
   padding: 4rem 0;
   margin-bottom: 0;
 }
-
 
 /* Button */
 
