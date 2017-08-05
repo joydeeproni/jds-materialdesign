@@ -1,10 +1,16 @@
-/*Spinner */
+/* Spinner */
 .jds-spinner {
     width: 100%;
     height: 100%;
     background: url('../images/preloader.gif') center no-repeat #FFF;
     z-index: 99999;
     position: fixed;
+}
+/* Pattern Background */
+#pattern-bkg{
+  background-image: url(../images/bkgphone.png);
+  background-repeat: space;
+  background-position: center;
 }
 /* Navigation bar */
 nav.primary {
@@ -212,7 +218,20 @@ nav.primary ul li a:hover {
   margin: auto;
   font-size: 8px;
 }
-
+/* Skills */
+.skills {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.skills {
+  margin-top: 1rem;
+}
+.skills-img {
+  display: block;
+  text-align: center;
+  margin: 2.5rem auto 10px;
+  height: 65px;
+}
 
 /* Social Icons */
 
@@ -246,7 +265,6 @@ nav.primary ul li a:hover {
   -webkit-appearance: none;
 }
 
-
 /* Footer */
 
 .footer {
@@ -258,6 +276,11 @@ nav.primary ul li a:hover {
 /* Larger than phone */
 
 @media (min-width: 550px) {
+  #pattern-bkg{
+    background-image: url(../images/bkg.png);
+    background-repeat:repeat;
+    background-position: center;
+  }
   .header {
     margin-top: 5rem;
   }
@@ -323,6 +346,11 @@ nav.primary ul li a:hover {
 /* Larger than tablet */
 
 @media (min-width: 750px) {
+   #pattern-bkg{
+    background-image: url(../images/bkg.png);
+    background-repeat: repeat;
+    background-position: center;
+  }
   /* Navbar */
   .navbar+.docs-section {
     border-top-width: 0;
