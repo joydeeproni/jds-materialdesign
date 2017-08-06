@@ -37,7 +37,7 @@ nav.primary ul li a {
   font-weight: normal;
   letter-spacing: 0.08em;
   background: ##999999;
-  font-size: 60%;
+  font-size: 70%;
 }
 nav.primary ul li a:hover {
   color: #45ada8;
@@ -100,24 +100,26 @@ nav.primary ul li a:hover {
 .button.button-primary {
   background-color: #45ada8;
   border-color: #45ada8;
+  transition: all 250ms ease-in-out;
 }
 
 .button.button-primary:hover {
   background-color: #fff;
   border-color: #45ada8;
   color: #45ada8;
-  transition: 0.5s;
+  transition: all 250ms ease-in-out;
 }
 
 .button.button-secondary {
   border-color: black;
   color: black;
+  transition: all 250ms ease-in-out;
 }
 
 .button.button-secondary:hover {
   border-color: #45ada8;
   color: #45ada8;
-  transition: 0.5s;
+  transition: all 250ms ease-in-out;
 }
 
 .button.button-secondary.disabled:hover {
@@ -138,7 +140,6 @@ nav.primary ul li a:hover {
   text-align: center;
 }
 
-
 /* Phone */
 
 .charts {
@@ -151,7 +152,6 @@ nav.primary ul li a:hover {
   padding: 2rem 0 0rem;
   text-align: center;
 }
-
 
 /* Portfolio Sections */
 
@@ -392,20 +392,8 @@ nav.primary ul li a:hover {
   .navbar-link.active {
     color: #33C3F0;
   }
-  .has-docked-nav .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  .has-docked-nav .navbar-spacer {
-    display: block;
-  }
-  /* Re-overiding the width 100% declaration to match size of % based container */
-  .has-docked-nav .navbar>.container {
-    width: 80%;
-  }
   nav.primary ul li a {
-    font-size: 90%;
+    font-size: 80%;
   }
   .phone {
     position: relative;
