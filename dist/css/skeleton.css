@@ -71,7 +71,7 @@ h6{font-size:1.5rem;}
 }
 p{margin-top:0;}
 a{color:#45ada8;text-decoration:none;transition:250ms;}
-a:hover{color:#547980;transition:250ms;}
+a:hover{color:#547980; transition:all 250ms ease-out;}
 .button,
 button,
 input[type="submit"],

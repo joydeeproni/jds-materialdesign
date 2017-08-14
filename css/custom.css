@@ -1,5 +1,4 @@
 /* Spinner */
-
 .jds-spinner {
   width: 100%;
   height: 100%;
@@ -14,9 +13,15 @@
   background-repeat: space;
   background-position: center;
 }
+/* Selection colors */
+::selection{
+  background: #e5fcc2;
+}
+::-moz-selection{
+  background: #e5fcc2;
+}
 
 /* Navigation bar */
-
 nav.primary {
   display: table;
   margin: 0 auto;
@@ -40,13 +45,14 @@ nav.primary ul li a {
   text-decoration: none;
   font-weight: normal;
   letter-spacing: 0.08em;
-  background: ##999999;
+  background: #999999;
   font-size: 70%;
 }
 nav.primary ul li a:hover {
   color: #45ada8;
   cursor: pointer;
-  transition: 0.5s;
+  transition: all 0.5s ease-out;
+  box-shadow: inset 0  1px 0 0 #45ada8;
 }
 
 /* Logo */
@@ -294,6 +300,7 @@ nav.primary ul li a:hover {
 .footer {
   font-size: 10px;
   text-align: center;
+  margin: 10px;
 }
 
 /* Larger than phone */
