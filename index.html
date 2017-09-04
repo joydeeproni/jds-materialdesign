@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -7,28 +8,46 @@
   <title>J d . S - Website of Joydeep Sengupta</title>
   <meta name="description" content="Joydeep Sengupta - Designer and Developer from India">
   <meta name="author" content="Joydeep Sengupta">
+  <meta name="keywords" content="joydeep sengupta, joydeep, sengupta, joydeep roni, roni, kolkata, joydeep ux designer, joydeep developer, joydeep iter, ux designer, developer, web developer, website of joydeep sengupta, website of joydeep, website of joydeep roni">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#45ada8">
+  <meta name="theme-color" content="#000">
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta content="width=device-width,initial-scale=1" name=viewport>
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700" rel=stylesheet>
+  <link href="//fonts.googleapis.com/css?family=Hind:300" rel=stylesheet>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href=dist/css/normalize.css rel=stylesheet>
-  <link href=dist/css/skeleton.css rel=stylesheet>
-  <link href=css/custom.css rel=stylesheet>
-  <link href=path/to/font-awesome/css/font-awesome.min.css rel=stylesheet>
-  <link href=css/github-prettify-theme.css rel=stylesheet>
+  <link href=css/styles.css rel=stylesheet>
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js></script>
-  <script src=https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js></script>
-
-  <script async src=js/site.js></script>
   <script src=https://use.fontawesome.com/b63734bc8f.js></script>
+  <!-- Typewriter script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    var TxtType = function(t, e, i) {
+      this.toRotate = e, this.el = t, this.loopNum = 0, this.period = parseInt(i, 10) || 2e3, this.txt = "", this.tick(), this.isDeleting = !1
+    }
+    TxtType.prototype.tick = function() {
+      var t = this.loopNum % this.toRotate.length,
+        e = this.toRotate[t]
+      this.isDeleting ? this.txt = e.substring(0, this.txt.length - 1) : this.txt = e.substring(0, this.txt.length + 1), this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
+      var i = this,
+        s = 200 - 100 * Math.random()
+      this.isDeleting && (s /= 2), this.isDeleting || this.txt !== e ? this.isDeleting && "" === this.txt && (this.isDeleting = !1, this.loopNum++, s = 500) : (s = this.period, this.isDeleting = !0), setTimeout(function() {
+        i.tick()
+      }, s)
+    }, window.onload = function() {
+      for (var t = document.getElementsByClassName("typewrite"), e = 0; e < t.length; e++) {
+        var i = t[e].getAttribute("data-type"),
+          s = t[e].getAttribute("data-period")
+        i && new TxtType(t[e], JSON.parse(i), s)
+      }
+      var n = document.createElement("style")
+      n.type = "text/css", n.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid midnightblue}", document.body.appendChild(n)
+    }
+  </script>
   <!-- For preloader -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
@@ -41,124 +60,106 @@
         <style>.jds-spinner { display: none; } </style>
     </noscript>
   <!-- For preloader ends -->
-  <!-- Typewriter script
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script>
-  var TxtType=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1}
-  TxtType.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t]
-  this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>"
-  var i=this,s=200-100*Math.random()
-  this.isDeleting&&(s/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=500):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("typewrite"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-type"),s=t[e].getAttribute("data-period")
-  i&&new TxtType(t[e],JSON.parse(i),s)}var n=document.createElement("style")
-  n.type="text/css",n.innerHTML=".typewrite > .wrap { border-right: 0.08em solid #fff}",document.body.appendChild(n)}
-  </script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href=/images/favicon.png rel=icon type=image/png>
 </head>
-<body class="code-snippets-visible" id="pattern-bkg">
+
+<body class="main">
   <!-- For preloader -->
   <div class="jds-spinner"></div>
-  <header>
-    <!-- Navigation
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class=navigation>
-      <nav class="container primary">
-        <div class="columns sixteen">
-          <ul>
-            <li><a href=#about class=nav-link>About</a></li>
-            <li><a href=#work class=nav-link>Work</a></li>
-            <li><a href=#contact class=nav-link>Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <!-- Logo
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container logo">
-      <svg data-name="Layer 1" id=Layer_1 viewBox="0 0 35.28 35.28" xmlns=http://www.w3.org/2000/svg><defs><style>.cls-1,.cls-3{stroke:#000}.cls-1,.cls-3,.cls-4{stroke-miterlimit:10}.cls-1{stroke-width:.75px}.cls-2{fill:#fff}.cls-3,.cls-4{fill:none}.cls-4{stroke:#fff}</style></defs><title>jds-logo</title><circle cx=17.64 cy=17.64 r=17.64 /><path class=cls-1 d=M45,29.69 transform="translate(-7.35 -5.67)"/><polygon class=cls-2 points="4.26 9.9 17.64 33.09 31.03 9.9 4.26 9.9"/><polyline class=cls-3 points="17.64 34.65 17.64 16.36 4.39 16.36"/><line class=cls-3 x1=17.64 x2=17.64 y1=9.05 y2=21.84 /><path class=cls-4 d=M54.19,32.36 transform="translate(-7.35 -5.67)"/></svg>
-    </div>
-  </header>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class=container>
-    <section class=header>
-      <h2 class=title>
-        <a href="" class=typewrite data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am a Designer.", "I build Websites.", "I love UX." ]'>
-    <span class=wrap></span>
-  </a>
-      </h2>
-      <p class="">Thanks for stopping by.</p>
-      <a href=portfolio/portfolio.html class="button button-primary">Portfolio</a>
-      <div class="row value-props">
-        <div class="columns four value-prop">
-          <svg xmlns="http://www.w3.org/2000/svg" class="value-img" viewBox="0 0 32 32"><title>idea</title><g id="idea" data-name="499-Idea"><path d="M16,0A12,12,0,0,0,4,12a11.56,11.56,0,0,0,7,10.66V28a1,1,0,0,0,1,1h1v2a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V29h1a1,1,0,0,0,1-1V22.66A11.56,11.56,0,0,0,28,12,12,12,0,0,0,16,0Zm1,30H15V29h2Zm2-3H13V23h6Zm.79-6H17V10h3V8H12v2h3V21H12.21A9.63,9.63,0,0,1,6,12a10,10,0,0,1,20,0A9.63,9.63,0,0,1,19.79,21Z"/></g></svg> Sharp sense of detailing and precision.
-        </div>
-        <div class="columns four value-prop">
-           <svg xmlns="http://www.w3.org/2000/svg" class="value-img" viewBox="0 0 32 32"><title>computer</title><g id="computer" data-name="365-Computer"><path d="M31,0H27V2h3V15H2V2H15V0H1A1,1,0,0,0,0,1V22a1,1,0,0,0,1,1H11v4H10a1,1,0,0,0-.95.68L8.28,30H6v2H26V30H23.72l-.77-2.32A1,1,0,0,0,22,27H21V23H31a1,1,0,0,0,1-1V1A1,1,0,0,0,31,0ZM21.61,30H10.39l.33-1H21.28ZM19,27H13V23h6Zm1-6H2V17H30v4Z"/><path d="M20.29,11.71a1,1,0,0,0,1.41,0l2-2A1,1,0,0,0,24,9V1a1,1,0,0,0-1-1H19a1,1,0,0,0-1,1V9a1,1,0,0,0,.29.71ZM20,2h2V8.59l-1,1-1-1Z"/><rect x="5" y="10" width="10" height="2"/><rect x="9" y="6" width="6" height="2"/></g></svg>Passionate about new innovations and technologies.
-        </div>
-        <div class="columns four value-prop">
-          <svg xmlns="http://www.w3.org/2000/svg" class="value-img" viewBox="0 0 32 32"><title>graphic</title><g id="graphic" data-name="268-Graphic"><path d="M31,10a1,1,0,0,0,1-1V1a1,1,0,0,0-1-1H23a1,1,0,0,0-1,1V4H10V1A1,1,0,0,0,9,0H1A1,1,0,0,0,0,1V9a1,1,0,0,0,1,1H4V22H1a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1H9a1,1,0,0,0,1-1V28H22v3a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V23a1,1,0,0,0-1-1H28V10ZM24,2h6V8H24ZM2,2H8V8H2ZM8,30H2V24H8Zm22,0H24V24h6Zm-4-8H23a1,1,0,0,0-1,1v3H10V23a1,1,0,0,0-1-1H6V10H9a1,1,0,0,0,1-1V6H22V9a1,1,0,0,0,1,1h3Z"/><polygon points="17 12 15 12 15 15 12 15 12 17 15 17 15 20 17 20 17 17 20 17 20 15 17 15 17 12"/></g></svg> Focussed on user-centered design process.
-        </div>
+  <header>
+    <div class="topbar">
+      <div class="logo">
+        <a class="logo" href="joydeeproni.com">
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1724 195 1000 1000"><defs><style>.a{clip-path:url(#b);}.b{fill:none;stroke:white;stroke-width:22px;}</style><clipPath id="b"><rect x="1724" y="195" width="1000" height="1000"/></clipPath></defs><g id="a" class="a"><g transform="translate(1754.934 227.604)"><circle class="b" cx="461.722" cy="461.722" r="461.722" transform="translate(7.35 5.68)"/><g transform="translate(185.306 313.168)"><path class="b" d="M199.873,399.473,404.717,754.112l.019-354.638Z" transform="translate(-124.248 -236.406)"/><path class="b" d="M431.934,241.4l-.046,518.9L720.405,241.424Z" transform="translate(-110.652 -249.398)"/><path class="b" d="M413.721,241.385l.3,136.923-221.858.266L108.478,241.24Z" transform="translate(-150.53 -278.24)"/></g></g></g></svg>
+        </a>
       </div>
-    </section>
-
-    <!-- About -->
-    <div class=docs-section id=line>
-      <h6 class=docs-header id="about">About</h6>
-      <p>I'm Joydeep Sengupta, designer from India who works with businesses, startups and anyone who believe in user experience that want to increase their bottom line through the power of great design. I design and build interfaces, primarily for web and
-        Android. With bachelor's degree in computer science, my tech savvines comes in handy in development process. I aspire to design and build experiences that are meaningful making technology simpler and delightful to use. You can read more about me <a href="about.html">here</a><br>You can download my resume
-        from <a href="https://goo.gl/BCcV8m">here</a>.</p>
-    </div>
-
-    <!-- Work -->
-    <div class=docs-section id=line>
-      <h6 class=docs-header id="work">Work</h6>
-      <p>I'm a designer specializing in UI/UX and web design. I also enjoy branding, graphic design and web development. I like to keep things minimal and focus on creating simple and usable experiences.</p>
-      <p>These are few people that I've worked with:</p>
-      <ul>
-        <li><b>Designer</b> at Tikii Marketing Services | Jun 2017
-          <p>Tikii is an early stage startup that helps businesses build their digital online presence and visual identity. I'm in charge of all the design activities including engagement creatives for social media, wireframes and mockups for web and visual
-            branding and identity.</p>
-        </li>
-        <li><b>UX Designer &amp Developer</b> at Deterge Services | Sep 2015 - Feb 2017
-          <p>Started an online laundry service for college students. I was a part of early ideation, user experience, wireframing, protoyping and visual design of the app. I was also responsible for designing visual identity and branding for the company.</p>
-        </li>
-        <li><b>Freelance Designer</b> for various clients | Since Oct 2016
-          <p>I worked with startups, local businesses and restaurants to design their visual marketing materials, branding, user experience and other visual motifs.</p>
-        </li>
-      </ul>
-      <p>You can check out my <a href=/portfolio/portfolio.html>portfolio</a> or my <a href=https://www.behance.net/joydeepronff6e>Behance</a> profile for a better idea about my work.</p>
-    </div>
-
-    <!-- Contact -->
-    <div class=docs-section id=line>
-      <h6 class=docs-header id="contact">Contact</h6>
-      <p>Email is the best way to reach me: <a href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep" target="_top">joydeep.roni@gmail.com</a>. You can hit me up on my other social media handles, links given below.</p>
-      <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-      <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-    </div>
-    <div class=container>
-      <div class="row social">
-        <div class="columns social twelve">
-          <div class="docs-section" id="line">
-          <ul>
-            <li><a href="https://www.facebook.com/joydeep.roni" class=social-icon> <i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/joydeeproni" class=social-icon> <i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/joydeep.roni/" class=social-icon> <i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/joydeeproni" class=social-icon> <i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.behance.net/joydeepronff6e" class=social-icon> <i class="fa fa-behance"></i></a></li>
-            <li><a href="https://www.github.com/joydeeproni" class=social-icon> <i class="fa fa-github"></i></a></li>
-          </ul>
-        </div>
-      </div>
+      <div class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep">Contact</a></li>
+          <li id="resume"><a href="https://dl.dropboxusercontent.com/s/3c1ttnbyazu90d6/New%20Minimal%20Resume%20v3.6-compressed.pdf?dl=0">Resumé</a></li>
+        </ul>
+        <a href="#" id="menu-icon"></a>
       </div>
     </div>
+  </header>
+  <div class="container">
+    <div class="home-text">
+      <h3 class=typewrite data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am UX Designer.", "I build websites." ]'>
+      <h4>I am all about tech, internet and user experience. Take a look at some of my work below. Thanks for stopping by.</h4>
+    </div>
+  </div>
+
+  <div class="sections">
+    <div class="section1">
+      <a href="#" class="work1" id="work">
+        <p><strong>Tikii Marketing Services</strong>
+        <br><br>Tikii is a early stage digital marketing and branding agency. My responsibilities are everything design for the company, from designing logos to developing user experiences for website. I currently work here but I am available for interesting freelance work.</p>
+        <br><p>Case study coming soon</p>
+      </a>
+    </div>
+    <div class="section2">
+      <a href="portfolio/deterge.html" class="work2">
+        <p><strong>Deterge Services</strong>
+        <br><br>Started out as college project, I co-founded this online laundry service startup back in 2015 as UX designer and developer, which turned out to be a milestone for graduates and young entrepreneurs in my university. With as simple as it could be user experience and quick service, we were able to garner more than 100 weekly active users in a month.</p>
+        <br><p>Learn more</p>
+      </a>
+    </div>
+    <div class="section3">
+      <a href="portfolio/freelance.html" class="work3">
+        <p><strong>Freelancer</strong>
+        <br><br>Started freelancing as graphic designer for several restaurants and local businesses as part-time during my college. I helped them building their brand and making an online presence, acheiving their business goals. By delivering quality and commitment, I managed to retain a few clients since more than a year. </p>
+        <br><p>Learn more</p>
+      </a>
+    </div>
+    <div class="section4">
+      <a href="portfolio/coleve.html" class="work4">
+        <p><strong>Coleve</strong>
+        <br><br>The Coleve app provides information about college's on-campus events, meet-ups, study-groups and also information about things to do in and around college campus. Users can find schedules, campus resources, local restaurant and new ways to meet new people, and more.</p>
+        <br><p>Learn more</p>
+      </a>
+    </div>
+    <div class="imagesection">
+      <img src="https://dl.dropboxusercontent.com/s/awv4xj2lp8ny2q6/index-cover.png?dl=0" alt="">
+      <!-- <img src="https://dl.dropboxusercontent.com/s/zsc4954au6eniar/index-cover-2.png?dl=0" alt=""> -->
+    </div>
+    </div>
+    <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="lastsection">
+      <div class="row">
+        <a class="footer-logo" href="joydeeproni.com">
+<svg id="footer-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1724 195 1000 1000"><defs><style>.a{clip-path:url(#b);}.b{fill:none;stroke:midnightblue;stroke-width:22px;}</style><clipPath id="b"><rect x="1724" y="195" width="1000" height="1000"/></clipPath></defs><g id="a" class="a"><g transform="translate(1754.934 227.604)"><circle class="b" cx="461.722" cy="461.722" r="461.722" transform="translate(7.35 5.68)"/><g transform="translate(185.306 313.168)"><path class="b" d="M199.873,399.473,404.717,754.112l.019-354.638Z" transform="translate(-124.248 -236.406)"/><path class="b" d="M431.934,241.4l-.046,518.9L720.405,241.424Z" transform="translate(-110.652 -249.398)"/><path class="b" d="M413.721,241.385l.3,136.923-221.858.266L108.478,241.24Z" transform="translate(-150.53 -278.24)"/></g></g></g></svg>
+        </a>
+        <div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/joydeep.roni" class=social-icon> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/joydeeproni" class=social-icon> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/joydeep.roni/" class=social-icon> <i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/joydeeproni" class=social-icon> <i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.behance.net/joydeepronff6e" class=social-icon> <i class="fa fa-behance"></i></a></li>
+          <li><a href="https://www.github.com/joydeeproni" class=social-icon> <i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <!-- Email
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <footer>
-      <div class=footer>
-        J d . S © 2017. Made with love in India.
+      <div class=email>
+        <svg height="2" width="40">
+  <line x1="0" y1="0" x2="200" y2="0" style="stroke:midnightblue;stroke-width:2" />
+</svg> <a href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep"><span>&nbsp;joydeep.roni@gmail.com</span></a>
       </div>
     </footer>
-  </div>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>
