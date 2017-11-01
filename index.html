@@ -25,15 +25,21 @@
   <!-- Google Analytics
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-105802396-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-105802396-1', 'auto');
+    ga('send', 'pageview');
+  </script>
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src=https://use.fontawesome.com/b63734bc8f.js></script>
@@ -88,12 +94,50 @@
     <div class="topbar">
       <div class="logo">
         <a class="logo" href="joydeeproni.com">
-<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1724 195 1000 1000"><defs><style>.a{clip-path:url(#b);}.b{fill:none;stroke:white;stroke-width:22px;}</style><clipPath id="b"><rect x="1724" y="195" width="1000" height="1000"/></clipPath></defs><g id="a" class="a"><g transform="translate(1754.934 227.604)"><circle class="b" cx="461.722" cy="461.722" r="461.722" transform="translate(7.35 5.68)"/><g transform="translate(185.306 313.168)"><path class="b" d="M199.873,399.473,404.717,754.112l.019-354.638Z" transform="translate(-124.248 -236.406)"/><path class="b" d="M431.934,241.4l-.046,518.9L720.405,241.424Z" transform="translate(-110.652 -249.398)"/><path class="b" d="M413.721,241.385l.3,136.923-221.858.266L108.478,241.24Z" transform="translate(-150.53 -278.24)"/></g></g></g></svg>
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1724 195 1000 1000">
+  <defs>
+  <style>
+.a{
+  clip-path:url(#b);
+}
+.b{
+  fill:none;
+  stroke:white;
+  stroke-width:22px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset:0;
+  -webkit-animation: dash 10s linear infinite;
+  -o-animation: dash 10s linear infinite;
+  -moz-animation: dash 10s linear infinite;
+  animation: dash 10s linear infinite;
+}
+  @-webkit-keyframes dash{
+    from{
+      stroke-dashoffset: 2000;
+    }
+    to{
+      stroke-dashoffset: 0;
+    }
+  }
+}
+</style>
+<clipPath id="b"><rect x="1724" y="195" width="1000" height="1000"/></clipPath>
+</defs>
+<g id="a" class="a">
+  <g transform="translate(1754.934 227.604)">
+    <circle class="b" cx="461.722" cy="461.722" r="461.722" transform="translate(7.35 5.68)"/>
+    <g transform="translate(185.306 313.168)">
+      <path class="b" d="M199.873,399.473,404.717,754.112l.019-354.638Z" transform="translate(-124.248 -236.406)"/>
+      <path class="b" d="M431.934,241.4l-.046,518.9L720.405,241.424Z" transform="translate(-110.652 -249.398)"/>
+      <path class="b" d="M413.721,241.385l.3,136.923-221.858.266L108.478,241.24Z" transform="translate(-150.53 -278.24)"/>
+    </g>
+  </g>
+</g>
+</svg>
         </a>
       </div>
       <div class="navbar">
         <ul class="navbar-list">
-          <li><a href="#">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep">Contact</a></li>
           <li id="resume"><a href="https://dl.dropboxusercontent.com/s/3c1ttnbyazu90d6/New%20Minimal%20Resume%20v3.6-compressed.pdf?dl=0">Resumé</a></li>
@@ -104,11 +148,10 @@
   </header>
   <div class="container">
     <div id="particles-js"></div>
-        <div class="home-text">
-          <h3 class=typewrite data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am a UX Designer.", "I build websites." ]'>
+    <div class="home-text">
+      <h3 class=typewrite data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am a UX Designer.", "I build websites." ]'>
           <h4>I want technology to be simpler to use, accessible to everyone and solve real life problems. Thanks for stopping by.</h4>
         </div>
-
   </div>
 
   <div class="sections">
