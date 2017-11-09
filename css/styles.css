@@ -642,6 +642,8 @@ canvas {
   border-radius: 0 0 3px 3px;
 }
 
+/* For mobile devices */
+
 @media(max-width:750px) {
   #logo {
     height: 70px;
@@ -657,7 +659,7 @@ canvas {
   .container {
     height: 550px
   }
-  .navbar ul, .navbar:active ul {
+  /*.navbar ul, .navbar:active ul {
     display: none;
     position: absolute;
     padding: 10px;
@@ -679,7 +681,38 @@ canvas {
   }
   .navbar:hover ul {
     display: -webkit-inline-box
+  }*/
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    z-index: 100;
   }
+
+  .menu .menu__link {
+    font-size: 5.5vw;
+    color: midnightblue;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu .menu__link:hover, .menu .menu__link:focus {
+    outline: none;
+    color: midnightblue;
+    text-decoration: line-through;
+  }
+
+  .icon {
+    display: block;
+    width: 2em;
+    height: 2em;
+    margin: 0 auto;
+    fill: midnightblue;
+  }
+
   .home-text {
     bottom: 60px;
     left: 50px;
