@@ -19,7 +19,7 @@ body {
   background: transparent
 }
 
-#particles-js{
+#particles-js {
   height: 100%;
   margin-top: 100px;
 }
@@ -44,7 +44,7 @@ body {
   transition: all 500ms ease-in-out
 }
 
-.navbar {
+/*.navbar {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -95,7 +95,156 @@ body {
 .navbar a:hover {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out
+}*/
+
+/* Sidebar reveal animation */
+
+/* Menu */
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 320px;
+  z-index: 100;
 }
+
+.js .menu {
+  pointer-events: none;
+}
+
+.js .menu--open {
+  pointer-events: visible;
+}
+
+.menu__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  padding: 20vh 3em;
+  margin: 0;
+  background: springgreen;
+  overflow: hidden;
+}
+
+.menu__item {
+  padding: 0.15em;
+}
+
+.js .menu__item {
+  transform: translate3d(-13em, 0, 0);
+  transition: transform 0s 0.4s;
+}
+
+.btn--close {
+  opacity: 0;
+}
+
+.menu--open .menu__item, .menu--open .btn--close {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.4s 0.135s, transform 0.4s 0.135s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.menu--open .menu__item:nth-child(2) {
+  transition-delay: 0.165s;
+}
+
+.menu--open .menu__item:nth-child(3) {
+  transition-delay: 0.195s;
+}
+
+.menu--open .menu__item:nth-child(4) {
+  transition-delay: 0.225s;
+}
+
+.menu .menu__link {
+  font-size: 3.5vw;
+  color: midnightblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu .menu__link:hover, .menu .menu__link:focus {
+  outline: none;
+  color: midnightblue;
+  text-decoration: line-through;
+}
+
+/* Content CSS */
+
+.content {
+  position: relative;
+  min-height: 300px;
+  overflow-x: hidden;
+}
+
+.flexy {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexy--center {
+  justify-content: center;
+}
+
+.content__heading {
+  flex: none;
+  width: 100%;
+  padding: 0 5vw;
+}
+
+.content__heading--center {
+  text-align: center;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.btn {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+}
+
+.btn--menu {
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  color: #939391;
+  pointer-events: visible;
+}
+
+.btn--close {
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  font-size: 0.75em;
+  z-index: 100;
+}
+
+.icon {
+  display: block;
+  width: 3em;
+  height: 3em;
+  margin: 0 auto;
+  fill: midnightblue;
+}
+
+/* Sidebar reveal animation ends */
 
 #menu-icon {
   display: none;
@@ -117,34 +266,34 @@ body {
   0% {
     background-color: #66FF00
   }
-  10%{
+  10% {
     background-color: #00FF33
   }
-  20%{
+  20% {
     background-color: #00FF66
   }
-  30%{
+  30% {
     background-color: #00FF99
   }
-  40%{
+  40% {
     background-color: #00FFCC
   }
-  50%{
+  50% {
     background-color: #00FFFF
   }
-  60%{
+  60% {
     background-color: #33FFFF
   }
-  70%{
+  70% {
     background-color: #33FFCC
   }
-  80%{
+  80% {
     background-color: #33FF99
   }
-  90%{
+  90% {
     background-color: #33FF66
   }
-  100%{
+  100% {
     background-color: #33FF33
   }
 }
@@ -153,34 +302,34 @@ body {
   0% {
     background-color: #66FF00
   }
-  10%{
+  10% {
     background-color: #00FF33
   }
-  20%{
+  20% {
     background-color: #00FF66
   }
-  30%{
+  30% {
     background-color: #00FF99
   }
-  40%{
+  40% {
     background-color: #00FFCC
   }
-  50%{
+  50% {
     background-color: #00FFFF
   }
-  60%{
+  60% {
     background-color: #33FFFF
   }
-  70%{
+  70% {
     background-color: #33FFCC
   }
-  80%{
+  80% {
     background-color: #33FF99
   }
-  90%{
+  90% {
     background-color: #33FF66
   }
-  100%{
+  100% {
     background-color: #33FF33
   }
 }
@@ -489,7 +638,7 @@ canvas {
   background-position: 50% 50%;
 }
 
-.count-particles{
+.count-particles {
   border-radius: 0 0 3px 3px;
 }
 

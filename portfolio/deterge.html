@@ -19,9 +19,13 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href=../css/styles.css rel=stylesheet>
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="../css/revealer.css" />
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src=https://use.fontawesome.com/b63734bc8f.js></script>
+  <script>document.documentElement.className = 'js';</script>
   <!-- For preloader -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
@@ -43,6 +47,17 @@
   <div class="jds-spinner"></div>
   <!-- Navbar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <svg class="hidden">
+  <symbol id="icon-menu" viewBox="0 0 17.6 9.9">
+    <title>menu</title>
+    <path d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"/>
+  </symbol>
+  <symbol id="icon-cross" viewBox="0 0 10.2 10.2">
+    <title>cross</title>
+    <path d="M5.8,5.1l4.4,4.4l-0.7,0.7L5.1,5.8l-4.4,4.4L0,9.5l4.4-4.4L0,0.7L0.7,0l4.4,4.4L9.5,0l0.7,0.7L5.8,5.1z"/>
+  </symbol>
+  </svg>
+
   <header>
     <div class="topbar">
       <div class="logo">
@@ -50,13 +65,17 @@
 <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1724 195 1000 1000"><defs><style>.a{clip-path:url(#b);}.b{fill:none;stroke:white;stroke-width:22px;}</style><clipPath id="b"><rect x="1724" y="195" width="1000" height="1000"/></clipPath></defs><g id="a" class="a"><g transform="translate(1754.934 227.604)"><circle class="b" cx="461.722" cy="461.722" r="461.722" transform="translate(7.35 5.68)"/><g transform="translate(185.306 313.168)"><path class="b" d="M199.873,399.473,404.717,754.112l.019-354.638Z" transform="translate(-124.248 -236.406)"/><path class="b" d="M431.934,241.4l-.046,518.9L720.405,241.424Z" transform="translate(-110.652 -249.398)"/><path class="b" d="M413.721,241.385l.3,136.923-221.858.266L108.478,241.24Z" transform="translate(-150.53 -278.24)"/></g></g></g></svg>
         </a>
       </div>
-      <div class="navbar">
-        <ul class="navbar-list">
-          <li><a href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep">Contact</a></li>
-          <li id="resume"><a href="https://dl.dropboxusercontent.com/s/3c1ttnbyazu90d6/New%20Minimal%20Resume%20v3.6-compressed.pdf?dl=0">Resumé</a></li>
-        </ul>
-        <a href="#" id="menu-icon"></a>
-      </div>
+      <button class="btn btn--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
+    </header>
+    <nav class="menu">
+      <button class="btn btn--close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+      <ul class="menu__inner">
+        <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#work">Work</a></li>
+        <li class="menu__item"><a class="menu__link" href="jds-resume.pdf">Resumé</a></li>
+        <li class="menu__item"><a class="menu__link" href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep!">Contact</a></li>
+      </ul>
+    </nav>
     </div>
   </header>
   <div class="porthead" id="deterge">
@@ -189,5 +208,45 @@
     </div>
     </div>
   </div>
+
+  <script src="../js/anime.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+  (function() {
+    var navEl = document.querySelector('nav.menu'),
+      revealer = new RevealFx(navEl),
+      closeCtrl = navEl.querySelector('.btn--close');
+
+    document.querySelector('.btn--menu').addEventListener('click', function() {
+      revealer.reveal({
+        bgcolor: '#191970',
+        duration: 400,
+        easing: 'easeInOutCubic',
+        onCover: function(contentEl, revealerEl) {
+          navEl.classList.add('menu--open');
+          contentEl.style.opacity = 1;
+        },
+        onComplete: function() {
+          closeCtrl.addEventListener('click', closeMenu);
+        }
+      });
+    });
+
+    function closeMenu() {
+      closeCtrl.removeEventListener('click', closeMenu);
+      navEl.classList.remove('menu--open');
+      revealer.reveal({
+        bgcolor: '#191970',
+        duration: 400,
+        easing: 'easeInOutCubic',
+        onCover: function(contentEl, revealerEl) {
+          navEl.classList.remove('menu--open');
+          contentEl.style.opacity = 0;
+        }
+      });
+    }
+  })();
+  </script>
+
   </body>
   </html>
