@@ -22,6 +22,7 @@
   <link href=css/styles.css rel=stylesheet>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/demo.css" />
   <link rel="stylesheet" type="text/css" href="css/revealer.css" />
@@ -48,6 +49,10 @@
   <script src=https://use.fontawesome.com/b63734bc8f.js></script>
   <script>
     document.documentElement.className = 'js';
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
   </script>
   <!-- Typewriter script
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -179,49 +184,49 @@
   <div class="container">
     <div id="particles-js"></div>
     <div class="home-text">
-      <h3 class=typewrite data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am a UX Designer.", "I build websites." ]'>
-          <h4>I want technology to be simpler to use, accessible to everyone and solve real life problems. Thanks for stopping by.</h4>
+      <h3 class="typewrite wow fadeIn" data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am a UX Designer.", "I build websites." ]'>
+          <h4 class="wow fadeInUp">I want technology to be simpler to use, accessible to everyone and solve real life problems. Thanks for stopping by.</h4>
         </div>
   </div>
 
   <div class="sections">
     <div class="section1">
       <a href="#" class="work1" id="work">
-        <p><strong>Tikii Marketing Services</strong>
+        <p class="wow fadeInUp"><strong>Tikii Marketing Services</strong>
         <br><br>Tikii is a early stage digital marketing and branding agency. My responsibilities are everything design for the company, from designing logos to developing user experiences for website. I currently work here but I am available for interesting freelance work.</p>
-        <br><p>Case study coming soon</p>
+        <br><p class="wow fadeInUp">Case study coming soon</p>
       </a>
     </div>
     <div class="section2">
       <a href="portfolio/deterge.html" class="work2">
-        <p><strong>Deterge Services</strong>
+        <p class="wow fadeInUp" data-wow-delay="1s"><strong>Deterge Services</strong>
         <br><br>Started out as college project, I co-founded this online laundry service startup back in 2015 as UX designer and developer, which turned out to be a milestone for graduates and young entrepreneurs in my university. With as simple as it could be user experience and quick service, we were able to garner more than 100 weekly active users in a month.</p>
-        <br><p>Learn more</p>
+        <br><p class="wow fadeInUp" data-wow-delay="1s">Learn more</p>
       </a>
     </div>
     <div class="section3">
       <a href="portfolio/freelance.html" class="work3">
-        <p><strong>Freelancer</strong>
-        <br><br>Started freelancing as designer and web developer for several restaurants and local businesses as part-time during my college. I helped them building their brand and making an online presence, acheiving their business goals. By delivering quality and commitment, I managed to retain a few clients since more than a year. </p>
-        <br><p>Learn more</p>
+        <p class="wow fadeInUp" data-wow-delay="1.2s"><strong>Logofolio</strong>
+        <br><br>These are some of the logos that I have designed for some of my clients, defining their visual identity of their brand and giving their users a sense of credibility and an emotion towards their brand.</p>
+        <br><p class="wow fadeInUp" data-wow-delay="1.1s">Learn more</p>
       </a>
     </div>
     <div class="section4">
       <a href="portfolio/coleve.html" class="work4">
-        <p><strong>Coleve</strong>
+        <p class="wow fadeInUp" data-wow-delay="1.3s"><strong>Coleve</strong>
         <br><br>The Coleve app provides information about college's on-campus events, meet-ups, study-groups and also information about things to do in and around college campus. Users can find schedules, campus resources, local restaurant and new ways to meet new people, and more.</p>
-        <br><p>Learn more</p>
+        <br><p class="wow fadeInUp" data-wow-delay="1.1s">Learn more</p>
       </a>
     </div>
     <div class="section5">
-      <a href="portfolio/pathadisha.html" class="work5">
-        <p><strong>Pathadisha</strong>
-        <br><br>Improved experience for the WBSTC bus transit solution for daily commuters using which they can track the buses on their route, plan their trips before getting out of their home.</p>
-        <br><p>Case study coming soon</p>
+      <a href="https://dl.dropboxusercontent.com/s/3fc7as7g5nl2reh/jds-extrawork.zip?dl=0" class="work5">
+        <p class="wow fadeInUp" data-wow-delay="1.4s"><strong>Freelance Projects</strong>
+        <br><br>Started freelancing as designer and web developer for several restaurants and local businesses as part-time during my college. I helped them building their brand and making an online presence, acheiving their business goals. By delivering quality and commitment, I managed to retain a few clients since more than a year. You can find some of my work from my freelance projects in a form of compiled ZIP file.</p>
+        <br><p class="wow fadeInUp" data-wow-delay="1.2s">Download my work</p>
       </a>
     </div>
     <div class="imagesection">
-      <img src="https://dl.dropboxusercontent.com/s/awv4xj2lp8ny2q6/index-cover.png?dl=0" alt="">
+      <img class="wow fadeIn" data-wow-delay="1.1s" src="https://dl.dropboxusercontent.com/s/awv4xj2lp8ny2q6/index-cover.png?dl=0" alt="">
       <!-- <img src="https://dl.dropboxusercontent.com/s/zsc4954au6eniar/index-cover-2.png?dl=0" alt=""> -->
     </div>
     </div>
@@ -248,7 +253,7 @@
     <!-- Email
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <footer>
-      <div class=email>
+      <div class="email wow fadeIn">
         <svg height="2" width="40">
   <line x1="0" y1="0" x2="200" y2="0" style="stroke:midnightblue;stroke-width:2" />
  </svg> <a href="#"><span>&nbsp; Made with love in India for everyone.</span></a> <!-- modal for information to be added -->

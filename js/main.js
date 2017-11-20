@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2016, Codrops
  * http://www.codrops.com
  */
@@ -14,7 +14,7 @@
 
 	// Helper vars and functions.
 	function extend(a, b) {
-		for(var key in b) { 
+		for(var key in b) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -48,7 +48,7 @@
 		// The animation/reveal settings. This can be set initially or passed when calling the reveal method.
 		revealSettings: {
 			// Animation direction: left right (lr) || right left (rl) || top bottom (tb) || bottom top (bt).
-			direction: 'lr',
+			direction: 'rl',
 			// Revealer´s background color.
 			bgcolor: '#f0f0f0',
 			// Animation speed. This is the speed to "cover" and also "uncover" the element (seperately, not the total time).
@@ -101,27 +101,27 @@
 		var val, origin, origin_2;
 
 		switch (direction) {
-			case 'lr' : 
+			case 'lr' :
 				val = 'scale3d(0,1,1)';
 				origin = '0 50%';
 				origin_2 = '100% 50%';
 				break;
-			case 'rl' : 
+			case 'rl' :
 				val = 'scale3d(0,1,1)';
 				origin = '100% 50%';
 				origin_2 = '0 50%';
 				break;
-			case 'tb' : 
+			case 'tb' :
 				val = 'scale3d(1,0,1)';
 				origin = '50% 0';
 				origin_2 = '50% 100%';
 				break;
-			case 'bt' : 
+			case 'bt' :
 				val = 'scale3d(1,0,1)';
 				origin = '50% 100%';
 				origin_2 = '50% 0';
 				break;
-			default : 
+			default :
 				val = 'scale3d(0,1,1)';
 				origin = '0 50%';
 				origin_2 = '100% 50%';
@@ -145,14 +145,14 @@
 			return false;
 		}
 		this.isAnimating = true;
-		
+
 		// Set the revealer element´s transform and transform origin.
 		var defaults = { // In case revealSettings is incomplete, its properties deafault to:
 				duration: 500,
 				easing: 'easeInOutQuint',
 				delay: 0,
 				bgcolor: '#f0f0f0',
-				direction: 'lr',
+				direction: 'rl',
 				coverArea: 0
 			},
 			revealSettings = revealSettings || this.options.revealSettings,
@@ -161,10 +161,10 @@
 
 		this.revealer.style.WebkitTransform = this.revealer.style.transform =  transformSettings.val;
 		this.revealer.style.WebkitTransformOrigin = this.revealer.style.transformOrigin =  transformSettings.origin.initial;
-		
+
 		// Set the Revealer´s background color.
 		this.revealer.style.backgroundColor = revealSettings.bgcolor || defaults.bgcolor;
-		
+
 		// Show it. By default the revealer element has opacity = 0 (CSS).
 		this.revealer.style.opacity = 1;
 
@@ -183,11 +183,11 @@
 			animationSettings = {
 				delay: revealSettings.delay || defaults.delay,
 				complete: function() {
-					self.revealer.style.WebkitTransformOrigin = self.revealer.style.transformOrigin = transformSettings.origin.halfway;		
+					self.revealer.style.WebkitTransformOrigin = self.revealer.style.transformOrigin = transformSettings.origin.halfway;
 					if( typeof revealSettings.onCover === 'function' ) {
 						revealSettings.onCover(self.content, self.revealer);
 					}
-					anime(animationSettings_2);		
+					anime(animationSettings_2);
 				}
 			};
 
@@ -210,7 +210,7 @@
 		}
 		anime(animationSettings);
 	};
-	
+
 	window.RevealFx = RevealFx;
 
 })(window);

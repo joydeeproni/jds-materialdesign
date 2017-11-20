@@ -407,31 +407,31 @@ body {
 .section1 a:hover {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  background: #8d0380
+  background: #8E44AD;
 }
 
 .section2 a:hover {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  background: #55aff3
+  background: #3498DB;
 }
 
 .section3 a:hover {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  background: tomato
+  background: #F5B041;
 }
 
 .section4 a:hover {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  background: #9e8370
+  background: #E74C3C;
 }
 
 .section5 a:hover {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  background: #27c1c9
+  background: #2ECC71;
 }
 
 .imagesection img {
