@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1451 901">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-laundryFont);
+      }
+
+      .cls-2 {
+        fill: #55aff3;
+        font-size: 204px;
+        font-family: VarelaRound-Regular, Varela Round;
+      }
+    </style>
+    <clipPath id="clip-laundryFont">
+      <rect width="1451" height="901"/>
+    </clipPath>
+  </defs>
+  <g id="laundryFont" class="cls-1">
+    <text id="_16_weekly_active_users_in_a_week" data-name="16+ weekly active users in a week" class="cls-2" transform="translate(163 133)"><tspan x="0" y="187">16+ weekly </tspan><tspan x="0" y="392">active users </tspan><tspan x="0" y="597">in a week</tspan></text>
+  </g>
+</svg>

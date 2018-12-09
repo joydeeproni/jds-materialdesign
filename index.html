@@ -1,314 +1,337 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
 
 <head>
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset=utf-8>
-  <title>J d . S - Website of Joydeep Sengupta</title>
-  <meta name="description" content="Joydeep Sengupta - Designer and Developer from India">
-  <meta name="author" content="Joydeep Sengupta">
-  <meta name="keywords" content="joydeep sengupta, joydeep, sengupta, joydeep roni, roni, kolkata, joydeep ux designer, joydeep developer, joydeep iter, ux designer, developer, web developer, website of joydeep sengupta, website of joydeep, website of joydeep roni">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="p:domain_verify" content="e84b475dfa7146d880b8b0951d1fda57"/> <!-- For Pinterest -->
-  <meta name="theme-color" content="#191970">
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta content="width=device-width,initial-scale=1" name=viewport>
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Hind:300" rel=stylesheet>
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href=css/styles.css rel=stylesheet>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="css/revealer.css" />
-  <!-- Google Analytics
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-105802396-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src=https://use.fontawesome.com/b63734bc8f.js></script>
-  <script>
-    document.documentElement.className = 'js';
-  </script>
-  <script src="js/wow.min.js"></script>
-  <script>
-  new WOW().init();
-  </script>
-  <!-- Typewriter script
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script>
-    var TxtType = function(t, e, i) {
-      this.toRotate = e, this.el = t, this.loopNum = 0, this.period = parseInt(i, 10) || 2e3, this.txt = "", this.tick(), this.isDeleting = !1
-    }
-    TxtType.prototype.tick = function() {
-      var t = this.loopNum % this.toRotate.length,
-        e = this.toRotate[t]
-      this.isDeleting ? this.txt = e.substring(0, this.txt.length - 1) : this.txt = e.substring(0, this.txt.length + 1), this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
-      var i = this,
-        s = 200 - 100 * Math.random()
-      this.isDeleting && (s /= 2), this.isDeleting || this.txt !== e ? this.isDeleting && "" === this.txt && (this.isDeleting = !1, this.loopNum++, s = 500) : (s = this.period, this.isDeleting = !0), setTimeout(function() {
-        i.tick()
-      }, s)
-    }, window.onload = function() {
-      for (var t = document.getElementsByClassName("typewrite"), e = 0; e < t.length; e++) {
-        var i = t[e].getAttribute("data-type"),
-          s = t[e].getAttribute("data-period")
-        i && new TxtType(t[e], JSON.parse(i), s)
-      }
-      var n = document.createElement("style")
-      n.type = "text/css", n.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid midnightblue}", document.body.appendChild(n)
-    }
-  </script>
-  <!-- For preloader -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script>
-    jQuery(window).load(function() {
-      jQuery(".jds-spinner").fadeOut(500);
-    });
-  </script>
-  <!-- For preloader for browsers without Javascript support-->
-  <noscript>
-        <style>.jds-spinner { display: none; } </style>
-    </noscript>
-  <!-- For preloader ends -->
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href=/images/favicon.png rel=icon type=image/png>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="http://joydeeproni.com/assets/img/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://heydays.no/apple-touch-icon-precomposed.png">
+	<meta name="msapplication-config" content="https://heydays.no/ieconfig.xml">
+	<link rel="manifest" href="https://heydays.no/manifest.json">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400" rel="stylesheet">
+	<script>
+		document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+	</script>
+	<title>J d . S - Joydeep Sengupta</title>
+	<meta name="description" content="UX Designer and Consultant" />
+	<link rel="canonical" href="https://heydays.no/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Jd.S - Joydeep Sengupta" />
+	<meta property="og:description" content="UX Designer and Consultant" />
+	<meta property="og:url" content="https://joydeeproni.com/" />
+	<meta property="og:site_name" content="Jd.S" />
+	<meta property="og:image" content="https://cdn.heydays.no/assets/uploads/2017/11/About_Us_Office-25-1920x1280.jpg" />
+	<meta property="og:image:secure_url" content="https://cdn.heydays.no/assets/uploads/2017/11/About_Us_Office-25-1920x1280.jpg" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1280" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="UX Designer and Consultant" />
+	<meta name="twitter:title" content="Jd.S - Joydeep Sengupta" />
+	<meta name="twitter:site" content="@joydeeproni" />
+	<meta name="twitter:image" content="https://cdn.heydays.no/assets/uploads/2016/04/OsloCityBike_Front.jpg" />
+	<meta name="twitter:creator" content="@joydeeproni" />
+	<script type='application/ld+json'>
+		{
+			"@context": "https:\/\/schema.org",
+			"@type": "WebSite",
+			"@id": "#website",
+			"url": "https:\/\/heydays.no\/",
+			"name": "Heydays",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https:\/\/heydays.no\/?s={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}
+	</script>
+	<script type='application/ld+json'>
+		{
+			"@context": "https:\/\/schema.org",
+			"@type": "Organization",
+			"url": "https:\/\/heydays.no\/",
+			"sameAs": ["https:\/\/www.facebook.com\/heydaysoslo\/", "http:\/\/heydaysoslo", "https:\/\/www.linkedin.com\/company\/heydays", "https:\/\/twitter.com\/heydaysoslo"],
+			"@id": "https:\/\/heydays.no\/#organization",
+			"name": "Heydays",
+			"logo": "https:\/\/heydays.no\/assets\/uploads\/2017\/11\/android-chrome-512x512.png"
+		}
+	</script>
+	<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+	<link rel='dns-prefetch' href='//s.w.org' />
+	<link rel='dns-prefetch' href='//cdn.heydays.no' />
+	<link rel='stylesheet' id='main-css' href='main.css' type='text/css' media='all' />
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js?ver=2.1.0'></script>
+	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var gadwpUAEventsData = {
+			"options": {
+				"event_tracking": "1",
+				"event_downloads": "zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*",
+				"event_bouncerate": 0,
+				"aff_tracking": 0,
+				"event_affiliates": "\/out\/",
+				"hash_tracking": 0,
+				"root_domain": "heydays.no",
+				"event_timeout": 100,
+				"event_precision": 0,
+				"event_formsubmit": 0,
+				"ga_pagescrolldepth_tracking": 1,
+				"ga_with_gtag": 0
+			}
+		}; /* ]]> */
+	</script>
+	<script type='text/javascript' src='https://heydays.no/assets/cache/busting/1/assets/plugins/google-analytics-dashboard-for-wp/front/js/tracking-analytics-events-5.3.5.js'></script>
+	<script type='text/javascript' src='https://heydays.no/assets/cache/busting/1/assets/plugins/google-analytics-dashboard-for-wp/front/js/tracking-scrolldepth-5.3.5.js'></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-8152481-2', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 
-<body class="main">
-  <!-- For preloader -->
-  <div class="jds-spinner"></div>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-  <svg class="hidden">
-  <symbol id="icon-menu" viewBox="0 0 17.6 9.9">
-    <title>menu</title>
-    <path d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"/>
-  </symbol>
-  <symbol id="icon-cross" viewBox="0 0 10.2 10.2">
-    <title>cross</title>
-    <path d="M5.8,5.1l4.4,4.4l-0.7,0.7L5.1,5.8l-4.4,4.4L0,9.5l4.4-4.4L0,0.7L0.7,0l4.4,4.4L9.5,0l0.7,0.7L5.8,5.1z"/>
-  </symbol>
-  </svg>
-
-
-  <header>
-    <div class="topbar">
-      <div class="logo">
-        <a class="logo" href="joydeeproni.com">
-<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1724 195 1000 1000">
-  <defs>
-  <style>
-.a{
-  clip-path:url(#b);
-}
-.b{
-  fill:none;
-  stroke:white;
-  stroke-width:22px;
-  stroke-dasharray: 1000;
-  stroke-dashoffset:0;
-  -webkit-animation: dash 10s linear infinite;
-  -o-animation: dash 10s linear infinite;
-  -moz-animation: dash 10s linear infinite;
-  animation: dash 10s linear infinite;
-}
-  @-webkit-keyframes dash{
-    from{
-      stroke-dashoffset: 2000;
-    }
-    to{
-      stroke-dashoffset: 0;
-    }
-  }
-}
-</style>
-<clipPath id="b"><rect x="1724" y="195" width="1000" height="1000"/></clipPath>
-</defs>
-<g id="a" class="a">
-  <g transform="translate(1754.934 227.604)">
-    <circle class="b" cx="461.722" cy="461.722" r="461.722" transform="translate(7.35 5.68)"/>
-    <g transform="translate(185.306 313.168)">
-      <path class="b" d="M199.873,399.473,404.717,754.112l.019-354.638Z" transform="translate(-124.248 -236.406)"/>
-      <path class="b" d="M431.934,241.4l-.046,518.9L720.405,241.424Z" transform="translate(-110.652 -249.398)"/>
-      <path class="b" d="M413.721,241.385l.3,136.923-221.858.266L108.478,241.24Z" transform="translate(-150.53 -278.24)"/>
-    </g>
-  </g>
-</g>
-</svg>
-        </a>
-      </div>
-      <div class="navbar">
-        <button class="btn btn--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
-  </header>
-  <nav class="menu">
-    <button class="btn btn--close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-    <ul class="menu__inner">
-      <li class="menu__item"><a class="menu__link" href="#work">Work</a></li>
-      <li class="menu__item"><a class="menu__link" href="jds-resume.pdf">Resumé</a></li>
-      <li class="menu__item"><a class="menu__link" href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep!">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- <ul class="navbar-list">
-          <li><a href="#work">Work</a></li>
-          <li><a href="mailto:joydeep.roni@gmail.com?Subject=Hi%20Joydeep">Contact</a></li>
-          <li id="resume"><a href="https://dl.dropboxusercontent.com/s/3c1ttnbyazu90d6/New%20Minimal%20Resume%20v3.6-compressed.pdf?dl=0">Resumé</a></li>
-        </ul>
-        <a href="#" id="menu-icon"></a> -->
-  </div>
-  </div>
-  </header>
-  <div class="container">
-    <div id="particles-js"></div>
-    <div class="home-text">
-      <h3 class="typewrite wow fadeIn" data-period=2000 data-type='[ "Hi, I am Joydeep.", "I am a UX Designer.", "I build websites." ]'>
-          <h4 class="wow fadeInUp">I want technology to be simpler to use, accessible to everyone and solve real life problems. Thanks for stopping by.</h4>
-        </div>
-  </div>
-
-  <div class="sections">
-    <div class="section1">
-      <a href="#" class="work1" id="work">
-        <p class="wow fadeInUp"><strong>Tikii Marketing Services</strong>
-        <br><br>Tikii is a early stage digital marketing and branding agency. My responsibilities are everything design for the company, from designing logos to developing user experiences for website. I currently work here but I am available for interesting freelance work.</p>
-        <br><p class="wow fadeInUp">Case study coming soon</p>
-      </a>
-    </div>
-    <div class="section2">
-      <a href="portfolio/deterge.html" class="work2">
-        <p class="wow fadeInUp" data-wow-delay="1s"><strong>Deterge Services</strong>
-        <br><br>Started out as college project, I co-founded this online laundry service startup back in 2015 as UX designer and developer, which turned out to be a milestone for graduates and young entrepreneurs in my university. With as simple as it could be user experience and quick service, we were able to garner more than 100 weekly active users in a month.</p>
-        <br><p class="wow fadeInUp" data-wow-delay="1s">Learn more</p>
-      </a>
-    </div>
-    <div class="section3">
-      <a href="portfolio/freelance.html" class="work3">
-        <p class="wow fadeInUp" data-wow-delay="1.2s"><strong>Logofolio</strong>
-        <br><br>These are some of the logos that I have designed for some of my clients, defining their visual identity of their brand and giving their users a sense of credibility and an emotion towards their brand.</p>
-        <br><p class="wow fadeInUp" data-wow-delay="1.1s">Learn more</p>
-      </a>
-    </div>
-    <div class="section4">
-      <a href="portfolio/coleve.html" class="work4">
-        <p class="wow fadeInUp" data-wow-delay="1.3s"><strong>Coleve</strong>
-        <br><br>The Coleve app provides information about college's on-campus events, meet-ups, study-groups and also information about things to do in and around college campus. Users can find schedules, campus resources, local restaurant and new ways to meet new people, and more.</p>
-        <br><p class="wow fadeInUp" data-wow-delay="1.1s">Learn more</p>
-      </a>
-    </div>
-    <div class="section5">
-      <a href="https://dl.dropboxusercontent.com/s/3fc7as7g5nl2reh/jds-extrawork.zip?dl=0" class="work5">
-        <p class="wow fadeInUp" data-wow-delay="1.4s"><strong>Freelance Projects</strong>
-        <br><br>Started freelancing as designer and web developer for several restaurants and local businesses as part-time during my college. I helped them building their brand and making an online presence, acheiving their business goals. By delivering quality and commitment, I managed to retain a few clients since more than a year. You can find some of my work from my freelance projects in a form of compiled ZIP file.</p>
-        <br><p class="wow fadeInUp" data-wow-delay="1.2s">Download my work</p>
-      </a>
-    </div>
-    <div class="imagesection">
-      <img class="wow fadeIn" data-wow-delay="1.1s" src="https://dl.dropboxusercontent.com/s/awv4xj2lp8ny2q6/index-cover.png?dl=0" alt="">
-      <!-- <img src="https://dl.dropboxusercontent.com/s/zsc4954au6eniar/index-cover-2.png?dl=0" alt=""> -->
-    </div>
-    </div>
-    <!-- Footer
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="lastsection">
-      <div class="row">
-        <a class="footer-logo" href="joydeeproni.com">
-<svg id="footer-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1724 195 1000 1000"><defs><style>.a{clip-path:url(#b);}.b{fill:none;stroke:midnightblue;stroke-width:22px;}</style><clipPath id="b"><rect x="1724" y="195" width="1000" height="1000"/></clipPath></defs><g id="a" class="a"><g transform="translate(1754.934 227.604)"><circle class="b" cx="461.722" cy="461.722" r="461.722" transform="translate(7.35 5.68)"/><g transform="translate(185.306 313.168)"><path class="b" d="M199.873,399.473,404.717,754.112l.019-354.638Z" transform="translate(-124.248 -236.406)"/><path class="b" d="M431.934,241.4l-.046,518.9L720.405,241.424Z" transform="translate(-110.652 -249.398)"/><path class="b" d="M413.721,241.385l.3,136.923-221.858.266L108.478,241.24Z" transform="translate(-150.53 -278.24)"/></g></g></g></svg>
-        </a>
-        <div class="social">
-        <ul>
-          <li><a href="https://www.facebook.com/joydeep.roni" class=social-icon> <i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/joydeeproni" class=social-icon> <i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/joydeep.roni/" class=social-icon> <i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/joydeeproni" class=social-icon> <i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.behance.net/joydeepronff6e" class=social-icon> <i class="fa fa-behance"></i></a></li>
-          <li><a href="https://www.github.com/joydeeproni" class=social-icon> <i class="fa fa-github"></i></a></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-
-    <!-- Email
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <footer>
-      <div class="email wow fadeIn">
-        <svg height="2" width="40">
-  <line x1="0" y1="0" x2="200" y2="0" style="stroke:midnightblue;stroke-width:2" />
- </svg> <a href="#"><span>&nbsp; Made with love in India for everyone.</span></a> <!-- modal for information to be added -->
-      </div>
-    </footer>
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-  <script>
-    particlesJS.load('particles-js', 'js/particles.json', function(){
-      console.log('particles.json loaded...');
-    });
-  </script>
-
-  <script src="js/anime.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-  (function() {
-    var navEl = document.querySelector('nav.menu'),
-      revealer = new RevealFx(navEl),
-      closeCtrl = navEl.querySelector('.btn--close');
-
-    document.querySelector('.btn--menu').addEventListener('click', function() {
-      revealer.reveal({
-        bgcolor: '#191970',
-        duration: 400,
-        easing: 'easeInOutCubic',
-        onCover: function(contentEl, revealerEl) {
-          navEl.classList.add('menu--open');
-          contentEl.style.opacity = 1;
-        },
-        onComplete: function() {
-          closeCtrl.addEventListener('click', closeMenu);
-        }
-      });
-    });
-
-    function closeMenu() {
-      closeCtrl.removeEventListener('click', closeMenu);
-      navEl.classList.remove('menu--open');
-      revealer.reveal({
-        bgcolor: '#191970',
-        duration: 400,
-        easing: 'easeInOutCubic',
-        onCover: function(contentEl, revealerEl) {
-          navEl.classList.remove('menu--open');
-          contentEl.style.opacity = 0;
-        }
-      });
-    }
-  })();
-  </script>
-
+<body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-6">
+	<div class="main-menu-wrap blackout">
+		<div class="bg-image-panel" data-default="{&quot;320&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-25-320x213.jpg&quot;,&quot;640&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-25-640x427.jpg&quot;,&quot;1280&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-25-1280x854.jpg&quot;,&quot;1920&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-25-1920x1280.jpg&quot;,&quot;2500&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-25.jpg&quot;}"></div>
+		<div class="fullguts tl"> <a href="https://joydeeproni.com/">J d . S</a></div>
+		<div class="vfill outer-margin main-menu">
+			<div class="vfill row align-middle">
+				<nav class="columns">
+					<ul id="menu-main-menu" class="primary-menu h2">
+						<li id="menu-item-26" class="js-projects menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-26"><a href="https://heydays.no/" data-sources="{&quot;320&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/OsloCityBike_Front-320x213.jpg&quot;,&quot;640&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/OsloCityBike_Front-640x427.jpg&quot;,&quot;1280&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/OsloCityBike_Front-1280x853.jpg&quot;,&quot;1920&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/OsloCityBike_Front-1920x1280.jpg&quot;,&quot;2560&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/OsloCityBike_Front-2560x1707.jpg&quot;}">Work</a></li>
+						<li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="process.html" data-sources="{&quot;320&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/heydays_about_3000px-320x213.jpg&quot;,&quot;640&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/heydays_about_3000px-640x427.jpg&quot;,&quot;1280&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/heydays_about_3000px-1280x853.jpg&quot;,&quot;1920&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/heydays_about_3000px-1920x1280.jpg&quot;,&quot;2560&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2016\/04\/heydays_about_3000px-2560x1707.jpg&quot;}">Process</a></li>
+						<li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="blog.html" data-sources="{&quot;320&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-9-320x320.jpg&quot;,&quot;640&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-9-640x640.jpg&quot;,&quot;1280&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-9-1280x1280.jpg&quot;,&quot;1920&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-9-1920x1920.jpg&quot;,&quot;2500&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-9.jpg&quot;}">Blog</a></li>
+						<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="mailto:joydeep.roni@gmail.com" data-sources="{&quot;320&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-15-320x320.jpg&quot;,&quot;640&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-15-640x640.jpg&quot;,&quot;1280&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-15-1280x1280.jpg&quot;,&quot;1920&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-15-1920x1920.jpg&quot;,&quot;2500&quot;:&quot;https:\/\/cdn.heydays.no\/assets\/uploads\/2017\/11\/About_Us_Office-15.jpg&quot;}">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="fullguts bl"> <a href="mailto:joydeep.roni@gmail.com">joydeep.roni@gmail.com</a></div>
+		<div class="fullguts br"> <a href="https://www.instagram.com/lifeisntbnw/" target="_blank">Résumé</a></div>
+	</div>
+	<div class="site-nav-background"></div>
+	<div class="site-title fullguts">
+		<div class="inner"> <a class="title current" href="https://joydeeproni.com/">J d . S</a> <span class="breadcrumb"></span></div>
+	</div>
+	<div class="site-nav fullguts"> <button class="toggler btn-toggle"> <span></span> </button></div>
+	<div id="page">
+		<div id="content">
+			<article class="homepage">
+				<header class="hero outer-margin header-pad">
+					<div class="row align-middle">
+						<div class="columns pb">
+							<div class="intro-space">
+								<div class="intro-logo"> <img src="http://joydeeproni.com/assets/img/jds-logo.svg" alt=""></div>
+								<div class="intro-title">
+									<h1>Design is more than just aesthetics</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- <div data-breadcrumb="Notes" class="outer-margin py hide-title">
+					<div class="row expanded small-up-1 medium-up-2 large-up-3 front-page-post-loop">
+						<div class="post columns card ">
+							<div class="media"><img width="1280" height="1280" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="attachment-medium size-medium lazyload" alt="" sizes="(max-width: 1280px) 100vw, 1280px" data-sizes="auto"
+								  data-srcset="https://cdn.heydays.no/assets/uploads/2018/10/Heydays_Aurlands.jpg 1280w, https://cdn.heydays.no/assets/uploads/2018/10/Heydays_Aurlands-320x320.jpg 320w, https://cdn.heydays.no/assets/uploads/2018/10/Heydays_Aurlands-640x640.jpg 640w" /></div>
+							<header class="show-for-sr">
+								<h2>Aurlands</h2>
+							</header>
+							<div class="small text-left">
+								<div class="wysiwyg-excerpt"><time datetime="2018-10-16T13:38:11+01:00">October 2018&nbsp;&ndash;&nbsp;</time>
+									<p>A peak at our ongoing collaboration with Norwegian shoe brand Aurlands, makers of the original penny loafer 👞 Photography by <a href="https://lassefloede.com" target="_blank" rel="noopener">Lasse Fløde</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="post columns card ">
+							<div class="media"><img width="1280" height="1280" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="attachment-medium size-medium lazyload" alt="" sizes="(max-width: 1280px) 100vw, 1280px" data-sizes="auto"
+								  data-srcset="https://cdn.heydays.no/assets/uploads/2018/09/heydays-book.jpg 1280w, https://cdn.heydays.no/assets/uploads/2018/09/heydays-book-320x320.jpg 320w, https://cdn.heydays.no/assets/uploads/2018/09/heydays-book-640x640.jpg 640w" /></div>
+							<header class="show-for-sr">
+								<h2>Heydays book</h2>
+							</header>
+							<div class="small text-left">
+								<div class="wysiwyg-excerpt"><time datetime="2018-09-19T16:24:51+01:00">September 2018&nbsp;&ndash;&nbsp;</time>
+									<div id="js_v" class="_5pbx userContent _3576" data-ft="{&quot;tn&quot;:&quot;K&quot;}">
+										<p>We’ve made a Heydays book! It’s called OUTSIDE/INSIDE and looks back at what we’ve done and learned from our first 10 years. <a href="http://outside.heydays.no/" target="_blank" rel="noopener nofollow" data-ft="{&quot;tn&quot;:&quot;-U&quot;}"
+											  data-lynx-mode="origin" data-lynx-uri="https://l.facebook.com/l.php?u=http%3A%2F%2Foutside.heydays.no%2F&amp;h=AT0P1z_awjkTB0dbq2fySOsr1mAuCLdnJ_n3aW22QCxkhAzkWIfPP3E_Q7fuhU2Gsm3c02i9YclCY_2T1Qt04Nn0r3eB05H9na8JaUFYeZ5_voZNJ7ncyMZZfzdMeyl9WwUDW2dJfpE478_AEIzrYmOIZ6PbO16nnJVxE5HtP-h27QD7l3SUm_h3T0ezBUm_9aBa7nqcFXyKsZiVzaTMrgBYFUYaSGiOczooxeHVqA6QNBybbNGJm34TeSFCCklflZI-EyYSEvTDZAdtSt4WY3nADvyVXoOmDyrZMtX_cxFg6-H7jRCFuNROseDu_019KELX031uYG9qZe-0XkGoyHPT8WJzrEX5svHE1hGLENxRvvxiOXXTdC4FjG0rr2v488wGfs65c4lJasKrxKsxnnMGUB8-MqU11O4xPzGU_w">Available
+												to buy now</a></p>
+									</div>
+									<div class="_3x-2" data-ft="{&quot;tn&quot;:&quot;H&quot;}">
+										<div data-ft="{&quot;tn&quot;:&quot;H&quot;}">
+											<div class="mtm">
+												<div class="_2a2q _65sr"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="post columns card ">
+							<div class="media"><img width="1280" height="960" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="attachment-medium size-medium lazyload" alt="" sizes="(max-width: 1280px) 100vw, 1280px" data-sizes="auto"
+								  data-srcset="https://cdn.heydays.no/assets/uploads/2018/08/Heydays-NRK-1.jpg 1280w, https://cdn.heydays.no/assets/uploads/2018/08/Heydays-NRK-1-320x240.jpg 320w, https://cdn.heydays.no/assets/uploads/2018/08/Heydays-NRK-1-640x480.jpg 640w" /></div>
+							<header class="show-for-sr">
+								<h2>NRK partnership</h2>
+							</header>
+							<div class="small text-left">
+								<div class="wysiwyg-excerpt"><time datetime="2018-09-04T07:47:08+01:00">September 2018&nbsp;&ndash;&nbsp;</time>
+									<p>Heydays has been selected as a strategic design partner for <a href="http://www.nrk.no">NRK</a> for the coming years. We’re humbled, and have already started collaborating on how the future looks for the Norwegian public broadcaster.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="projects project-list">
+					<div id="project-2521" class="project small-aspect-square project-item hide-title hide-nav-overlay text-bright" data-breadcrumb="MedForce">
+						<div class="outer-margin">
+							<div class="header vfill row align-middle">
+								<div class="columns">
+									<h2><a href="speaker.html">Simpliying speaker bureaus</a></h2>
+								</div>
+							</div>
+						</div>
+						<div class="lazyload lazyhide bg-cover img-cover" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/speaker-2560x1707.jpg 2560w, http://joydeeproni.com/assets/img/speaker-1280x853.jpg 1280w, http://joydeeproni.com/assets/img/speaker-320x213.jpg 320w, http://joydeeproni.com/assets/img/speaker-640x427.jpg 640w"></div>
+						<div class="animcover"></div>
+					</div>
+					<div id="project-18" class="project small-aspect-square project-item hide-title hide-nav-overlay text-bright" data-breadcrumb="Pronto">
+						<div class="outer-margin">
+							<div class="header vfill row align-middle">
+								<div class="columns">
+									<h2><a href="deliver.html">Delivering guarantees</a></h2>
+								</div>
+							</div>
+						</div>
+						<div class="lazyload lazyhide bg-cover img-cover" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/deliver-2560x1707.jpg 2560w, http://joydeeproni.com/assets/img/deliver-1280x853.jpg 1280w, http://joydeeproni.com/assets/img/deliver-320x213.jpg 320w, http://joydeeproni.com/assets/img/deliver-640x427.jpg 640w"></div>
+						<div class="animcover"></div>
+					</div>
+					<div id="project-213" class="project small-aspect-square project-item hide-title hide-nav-overlay text-bright" data-breadcrumb="Deterge">
+						<div class="outer-margin">
+							<div class="header vfill row align-middle">
+								<div class="columns">
+									<h2><a href="laundry.html">The simple laundry</a></h2>
+								</div>
+							</div>
+						</div>
+						<div class="lazyload lazyhide bg-cover img-cover" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/laundry-2560x1707.jpg 2560w, http://joydeeproni.com/assets/img/laundry-1280x853.jpg 1280w, http://joydeeproni.com/assets/img/laundry-320x213.jpg 320w, http://joydeeproni.com/assets/img/laundry-640x427.jpg 640w"></div>
+						<div class="animcover"></div>
+					</div>
+					<div id="project-546" class="project small-aspect-square project-item hide-title hide-nav-overlay text-bright" data-breadcrumb="Regal">
+						<div class="outer-margin">
+							<div class="header vfill row align-middle">
+								<div class="columns">
+									<h2><a href="food.html">Food truck to hospitality</a></h2>
+								</div>
+							</div>
+						</div>
+						<div class="lazyload lazyhide bg-cover img-cover" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/food-2560x1707.jpg 2560w, http://joydeeproni.com/assets/img/food-1280x853.jpg 1280w, http://joydeeproni.com/assets/img/food-320x213.jpg 320w, http://joydeeproni.com/assets/img/food-640x427.jpg 640w"></div>
+						<div class="animcover"></div>
+					</div>
+					<div id="project-217" class="project small-aspect-square project-item hide-title hide-nav-overlay text-bright" data-breadcrumb="Sam Media Agency">
+						<div class="outer-margin">
+							<div class="header vfill row align-middle">
+								<div class="columns">
+									<h2><a href="digital.html">Campaigns to grow business</a></h2>
+								</div>
+							</div>
+						</div>
+						<div class="lazyload lazyhide bg-cover img-cover" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/ad-2560x1707.jpg 2560w, http://joydeeproni.com/assets/img/ad-1280x853.jpg 1280w, http://joydeeproni.com/assets/img/ad-320x213.jpg 320w, http://joydeeproni.com/assets/img/ad-640x427.jpg 640w"></div>
+						<div class="animcover"></div>
+					</div>
+					<div id="project-219" class="project small-aspect-square project-item hide-title hide-nav-overlay text-bright" data-breadcrumb="Logofolio">
+						<div class="outer-margin">
+							<div class="header vfill row align-middle">
+								<div class="columns">
+									<h2><a href="logo.html">Big brand for small</a></h2>
+								</div>
+							</div>
+						</div>
+						<div class="lazyload lazyhide bg-cover img-cover" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/logo-2560x1707.jpg 2560w, http://joydeeproni.com/assets/img/logo-1280x853.jpg 1280w, http://joydeeproni.com/assets/img/logo-320x213.jpg 320w, http://joydeeproni.com/assets/img/logo-640x427.jpg 640w"></div>
+						<div class="animcover"></div>
+					</div>
+					<div id="project-20" class="project small-aspect-square project-item hide-title hide-nav-overlay text-bright" data-breadcrumb="Miscellaneous">
+						<div class="outer-margin">
+							<div class="header vfill row align-middle">
+								<div class="columns">
+									<h2><a href="other.html">Peek on my other work</a></h2>
+								</div>
+							</div>
+						</div>
+						<div class="lazyload lazyhide bg-cover img-cover" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/other-2560x1707.jpg 2560w, http://joydeeproni.com/assets/img/other-1280x853.jpg 1280w, http://joydeeproni.com/assets/img/other-320x213.jpg 320w, http://joydeeproni.com/assets/img/other-640x427.jpg 640w"></div>
+						<div class="animcover"></div>
+					</div>
+				</div>
+				<div data-breadcrumb="">
+					<div class="pbuilder">
+						<div data-breadcrumb="" class="section-wrap">
+							<div class="section outer-margin">
+								<div class="row section-main align-center">
+									<div class="column small-12 medium-10 large-8">
+										<div class="module module-wysiwyg">
+											<h3>Introducing me</h3>
+											<p>My name is Joydeep Sengupta and I'm an UX designer and consultant based in Hyderabad, India. I have worked(ing) with more than a dozen of startups and small to medium tier enterprises, solving problems, improving the experience and achieving business goals. From identifying problems to prototyping solutions, the process is vital for me and I always stick to it with little improvisations here and there.
+											<br>
+											From B2C mobile applications to large scale mobile applications for multiple platforms, devices and users, highly versatile with ability to develop ideas and concepts into effective and practical design solutions.
+										</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section outer-margin">
+								<div class="row section-main expanded align-center align-top">
+									<div class="column small-6 medium-5 large-5">
+										<figure class="module module-image"><img width="1600" height="1600" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="attachment-large size-large lazyload" alt="" sizes="(max-width: 1600px) 100vw, 1600px"
+											  data-sizes="auto" data-srcset="http://joydeeproni.com/assets/img/about1.jpg 1600w, http://joydeeproni.com/assets/img/about1-320.jpg 320w, http://joydeeproni.com/assets/img/about1-1280.jpg 1280w, http://joydeeproni.com/assets/img/about1-640.jpg 640w" /></figure>
+									</div>
+									<div class="column small-6 medium-5 large-5">
+										<figure class="module module-image"><img width="1666" height="2083" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="attachment-large size-large lazyload" alt="" sizes="(max-width: 1666px) 100vw, 1666px"
+											  data-sizes="auto" data-srcset="http://joydeeproni.com/assets/img/about2.jpg 1666w, http://joydeeproni.com/assets/img/about2-1280x1600.jpg 1280w, http://joydeeproni.com/assets/img/about2-320x400.jpg 320w, http://joydeeproni.com/assets/img/about2-640x800.jpg 640w" /></figure>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-breadcrumb="" class="section-wrap blackout text-bright">
+							<div class="section has-media-bg my-0 outer-margin">
+								<div class="media-bg">
+									<div data-sizes="auto" class="img-cover lazyload" data-sizes="auto" data-bgset="http://joydeeproni.com/assets/img/process.jpg 2500w, http://joydeeproni.com/assets/img/process-320.jpg 320w, http://joydeeproni.com/assets/img/process-1280.jpg 1280w, http://joydeeproni.com/assets/img/process-640.jpg 640w"></div>
+								</div>
+								<div class="row section-main expanded vh-100 align-center align-middle">
+									<div class="column">
+										<div class="module module-wysiwyg">
+											<p class="h2"><a href="https://drive.google.com/file/d/1KkZ80fWzTG3yDeyBJM5_Iz_2D1gG5Bo6/view?usp=sharing">Download full case study</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</article>
+		</div>
+		<footer id="footer" class="py outer-margin">
+			<div class="row expanded justify-spaced">
+				<div class="columns"><a href="mailto:joydeep.roni@gmail.com">joydeep.roni@gmail.com</a></div>
+				<div class="columns text-right"> <a href="https://drive.google.com/file/d/13VUMCZC7ncB51_OXAdILwx5uwA4nlkRS/view?usp=sharing" target="_blank">Résumé</a></div>
+			</div>
+		</footer>
+	</div>
+	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var data = {
+			"ajaxurl": "https:\/\/heydays.no\/wp-admin\/admin-ajax.php",
+			"projects": [2521, 18, 213, 546, 217, 219, 20],
+			"project": ""
+		}; /* ]]> */
+	</script>
+	<script type='text/javascript' src='func.js'></script>
 </body>
+
 </html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1542451450 -->

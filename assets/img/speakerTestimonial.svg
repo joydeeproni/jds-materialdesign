@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-speakerTestimonial);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 36px;
+        font-family: TradeGothicNextLTPro-It, Trade Gothic Next LT Pro;
+        font-style: italic;
+      }
+
+      .cls-3 {
+        font-size: 13px;
+        font-family: Hind-Light, Hind;
+        font-weight: 300;
+        letter-spacing: 0.071em;
+        opacity: 0.6;
+      }
+    </style>
+    <clipPath id="clip-speakerTestimonial">
+      <rect width="400" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="speakerTestimonial" class="cls-1">
+    <text id="_thanks_for_clearing_our_mess_and_making_this_organised._We_couldn_t_have_done_it_without_you_" data-name="…thanks for clearing our mess and making this organised. We couldn’t have done it without you…" class="cls-2" transform="translate(33 57)"><tspan x="0" y="38">…thanks for clearing </tspan><tspan x="0" y="86">our mess and making </tspan><tspan x="0" y="134">this organised. We </tspan><tspan x="0" y="182">couldn’t have done it </tspan><tspan x="0" y="230">without you…</tspan></text>
+    <text id="EXCERPT_FROM_CLIENT_S_APPRECIATION_EMAIL" data-name="EXCERPT FROM CLIENT’S APPRECIATION EMAIL" class="cls-3" transform="translate(33 335.135)"><tspan x="0" y="0">EXCERPT FROM CLIENT’S APPRECIATION EMAIL</tspan></text>
+  </g>
+</svg>
