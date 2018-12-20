@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <filter id="Path_3" x="129.616" y="109.708" width="95.332" height="145.325" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-wallify">
+      <rect width="400" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="wallify" clip-path="url(#clip-wallify)">
+    <g id="wallify-logo-v2.0" transform="translate(12.942 115.708)">
+      <g id="Layer_1" data-name="Layer 1">
+        <path id="Path_1" data-name="Path 1" d="M26.666,0H0L50.666,127.325H77.332Z" fill="#fff"/>
+        <path id="Path_2" data-name="Path 2" d="M315.656,0H288.99l50.66,127.325h26.666Z" transform="translate(-112.283)" fill="#f0f0f0"/>
+        <g transform="matrix(1, 0, 0, 1, -12.94, -115.71)" filter="url(#Path_3)">
+          <path id="Path_3-2" data-name="Path 3" d="M256.2,0h26.666L232.2,127.325H205.53Z" transform="translate(-66.91 115.71)" fill="#fff"/>
+        </g>
+        <path id="Path_4" data-name="Path 4" d="M536.456,0h26.666L512.456,127.325H485.79Z" transform="translate(-188.746)" fill="#fff"/>
+        <text id="WALLIFY-2" data-name="WALLIFY" transform="translate(51.51 162.852)" fill="#fff" font-size="20" font-family="Helvetica" letter-spacing="1.24em"><tspan x="0" y="0">W</tspan><tspan y="0" letter-spacing="1.36em">ALLIFY</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

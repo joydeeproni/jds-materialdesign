@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="clip-water">
+      <rect width="400" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="water" clip-path="url(#clip-water)">
+    <text id="WATER-2" data-name="WATER" transform="translate(87 220)" fill="#fff" font-size="65" font-family="PlayfairDisplay-Bold, Playfair Display" font-weight="700"><tspan x="0" y="0">WATER</tspan></text>
+    <g id="baseline-star_rate-18px" transform="translate(179.143 128.143)">
+      <path id="Path_404" data-name="Path 404" d="M17.572,23.872l9.01,6.557L23.133,19.84l9.01-6.412H21.093L17.572,2.5,14.05,13.429H3l9.01,6.412L8.562,30.429Z" transform="translate(4.286 3.572)" fill="#fff"/>
+      <path id="Path_405" data-name="Path 405" d="M0,0H43.715V43.715H0Z" fill="none"/>
+    </g>
+    <g id="baseline-star_rate-18px-2" data-name="baseline-star_rate-18px" transform="translate(222.857 143.857)">
+      <path id="Path_404-2" data-name="Path 404" d="M9.1,11.439l3.769,2.743L11.421,9.753,15.19,7.071H10.568L9.1,2.5,7.622,7.071H3L6.769,9.753,5.326,14.182Z" transform="translate(0.048 0.04)" fill="#fff"/>
+      <path id="Path_405-2" data-name="Path 405" d="M0,0H18.285V18.285H0Z" fill="none"/>
+    </g>
+    <g id="baseline-star_rate-18px-3" data-name="baseline-star_rate-18px" transform="translate(162.857 143.857)">
+      <path id="Path_404-3" data-name="Path 404" d="M9.1,11.439l3.769,2.743L11.421,9.753,15.19,7.071H10.568L9.1,2.5,7.622,7.071H3L6.769,9.753,5.326,14.182Z" transform="translate(0.048 0.04)" fill="#fff"/>
+      <path id="Path_405-3" data-name="Path 405" d="M0,0H18.285V18.285H0Z" fill="none"/>
+    </g>
+    <path id="Path_406" data-name="Path 406" d="M-5710.089-1853.857c-2.724,6.3,0,134.187,0,134.187s-1,11.8,18.291,15.249,121.088,22.976,121.088,22.976l126.57-22.976s16.828-3.154,16.828-15.249v-129.095s-.894-14.181-15.57-16.415-126.329-23.445-126.329-23.445l-127.646,24.173S-5707.365-1860.158-5710.089-1853.857Z" transform="translate(5771 1984)" fill="none" stroke="#fff" stroke-width="8"/>
+    <text id="CONCEPTUALISED_TO_TASTE" data-name="CONCEPTUALISED TO TASTE" transform="translate(133 240)" fill="#fff" font-size="10" font-family="PlayfairDisplay-Regular, Playfair Display"><tspan x="0" y="0">CONCEPTUALISED TO TASTE</tspan></text>
+    <path id="Path_407" data-name="Path 407" d="M-5685-1748h39.518" transform="translate(5771 1984)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_408" data-name="Path 408" d="M-5685-1748h41" transform="translate(5959 1984)" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>
