@@ -66,8 +66,9 @@
 		});
 
 		// GREETING
+				$(function(){
 
-		var thehours = new Date().getHours();
+  var thehours = new Date().getHours();
 	var themessage;
 	var morning = ('Good morning!');
 	var afternoon = ('Good afternoon!');
@@ -85,7 +86,7 @@
 
 	$('.greeting').append(themessage);
 
-
+	});
 
 		// CONTACT FORM INPUT LABEL
 			function checkForInput(element) {
