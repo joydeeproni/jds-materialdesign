@@ -1,44 +1,73 @@
 @charset "UTF-8";
+
+
 /* CUSTOM FONTS */
-/* hind-siliguri-300 - latin */
 @font-face {
-  font-family: 'Hind Siliguri';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/hind-siliguri-v6-latin-300.eot'); /* IE9 Compat Modes */
-  src: local('Hind Siliguri Light'), local('HindSiliguri-Light'),
-       url('../fonts/hind-siliguri-v6-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/hind-siliguri-v6-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/hind-siliguri-v6-latin-300.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/hind-siliguri-v6-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/hind-siliguri-v6-latin-300.svg#HindSiliguri') format('svg'); /* Legacy iOS */
+    font-family: 'HelveticaNowText';
+    src: url('../fonts/helvetica/HelveticaNowText-Medium.eot');
+    src: url('../fonts/helvetica/HelveticaNowText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helvetica/HelveticaNowText-Medium.woff2') format('woff2'),
+        url('../fonts/helvetica/HelveticaNowText-Medium.woff') format('woff'),
+        url('../fonts/helvetica/HelveticaNowText-Medium.ttf') format('truetype'),
+        url('../fonts/helvetica/HelveticaNowText-Medium.svg#HelveticaNowText-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
-/* hind-siliguri-regular - latin */
+
 @font-face {
-  font-family: 'Hind Siliguri';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/hind-siliguri-v6-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Hind Siliguri Regular'), local('HindSiliguri-Regular'),
-       url('../fonts/hind-siliguri-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/hind-siliguri-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/hind-siliguri-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/hind-siliguri-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/hind-siliguri-v6-latin-regular.svg#HindSiliguri') format('svg'); /* Legacy iOS */
+    font-family: 'Helvetica Now Display';
+    src: url('../fonts/helvetica/HelveticaNowDisplay-Light.eot');
+    src: url('../fonts/helvetica/HelveticaNowDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Light.woff2') format('woff2'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Light.woff') format('woff'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Light.ttf') format('truetype'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Light.svg#HelveticaNowDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
-/* hind-siliguri-700 - latin */
+
 @font-face {
-  font-family: 'Hind Siliguri';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/hind-siliguri-v6-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Hind Siliguri Bold'), local('HindSiliguri-Bold'),
-       url('../fonts/hind-siliguri-v6-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/hind-siliguri-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/hind-siliguri-v6-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/hind-siliguri-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/hind-siliguri-v6-latin-700.svg#HindSiliguri') format('svg'); /* Legacy iOS */
+    font-family: 'Helvetica Now Display';
+    src: url('../fonts/helvetica/HelveticaNowDisplay-Bold.eot');
+    src: url('../fonts/helvetica/HelveticaNowDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Bold.woff') format('woff'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/helvetica/HelveticaNowDisplay-Bold.svg#HelveticaNowDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('../fonts/helvetica/HelveticaNowDisplay-XBlk.eot');
+    src: url('../fonts/helvetica/HelveticaNowDisplay-XBlk.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helvetica/HelveticaNowDisplay-XBlk.woff2') format('woff2'),
+        url('../fonts/helvetica/HelveticaNowDisplay-XBlk.woff') format('woff'),
+        url('../fonts/helvetica/HelveticaNowDisplay-XBlk.ttf') format('truetype'),
+        url('../fonts/helvetica/HelveticaNowDisplay-XBlk.svg#HelveticaNowDisplay-XBlk') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text';
+    src: url('../fonts/helvetica/HelveticaNowText-Regular.eot');
+    src: url('../fonts/helvetica/HelveticaNowText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helvetica/HelveticaNowText-Regular.woff2') format('woff2'),
+        url('../fonts/helvetica/HelveticaNowText-Regular.woff') format('woff'),
+        url('../fonts/helvetica/HelveticaNowText-Regular.ttf') format('truetype'),
+        url('../fonts/helvetica/HelveticaNowText-Regular.svg#HelveticaNowText-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* BODY */
 * {
   outline: none !important;
@@ -48,7 +77,7 @@ body {
   margin: 0;
   padding-left: 150px;
   padding-right: 50px;
-  font-family: "Hind Siliguri";
+  font-family: "Helvetica Now Display";
   font-size: 17px;
   color: #282828;
   -webkit-transition: all 0.4s ease-in-out;
