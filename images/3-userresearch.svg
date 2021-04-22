@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="513" height="513" viewBox="0 0 513 513">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_493" data-name="Rectangle 493" width="513" height="513" transform="translate(-1056 4032)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(1056 -4032)" clip-path="url(#clip-path)">
+    <g id="user-profile" transform="translate(-1056 4032)">
+      <path id="Path_134" data-name="Path 134" d="M192.375,64.125a80.156,80.156,0,1,1-80.156,80.156,80.156,80.156,0,0,1,80.156-80.156m0-32.062A112.219,112.219,0,1,0,304.594,144.281,112.219,112.219,0,0,0,192.375,32.063Z" fill="#fff"/>
+      <path id="Path_135" data-name="Path 135" d="M352.688,480.938H320.625V400.781a80.156,80.156,0,0,0-80.156-80.156H144.281a80.156,80.156,0,0,0-80.156,80.156v80.156H32.063V400.781A112.219,112.219,0,0,1,144.281,288.563h96.187A112.219,112.219,0,0,1,352.688,400.781Z" fill="#fff"/>
+      <rect id="Rectangle_496" data-name="Rectangle 496" width="160.313" height="32.063" transform="translate(352.688 64.125)" fill="#fff"/>
+      <rect id="Rectangle_497" data-name="Rectangle 497" width="160.313" height="32.063" transform="translate(352.688 144.281)" fill="#fff"/>
+      <rect id="Rectangle_498" data-name="Rectangle 498" width="112.219" height="32.063" transform="translate(352.688 224.438)" fill="#fff"/>
+      <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="513" height="513" fill="none"/>
+    </g>
+  </g>
+</svg>

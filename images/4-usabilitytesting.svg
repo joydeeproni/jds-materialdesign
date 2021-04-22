@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="513" height="513" viewBox="0 0 513 513">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_502" data-name="Rectangle 502" width="513" height="513" transform="translate(-1710 4032)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_14" data-name="Mask Group 14" transform="translate(1710 -4032)" clip-path="url(#clip-path)">
+    <g id="eyedropper" transform="translate(-1710 4032)">
+      <rect id="Rectangle_503" data-name="Rectangle 503" width="48.094" height="48.094" transform="translate(32.063 432.844)" fill="#fff"/>
+      <path id="Path_144" data-name="Path 144" d="M476.288,116.868,396.132,36.712a16.031,16.031,0,0,0-22.6,0h0l-52.9,52.9-20.68-20.841L277.18,91.538l20.841,20.68L132.9,277.18a16.031,16.031,0,0,0-4.649,11.382v25.49L84.805,357.337a16.031,16.031,0,0,0,0,22.6h0L132.9,428.034a16.031,16.031,0,0,0,22.6,0h0l43.445-43.284h25.49A16.031,16.031,0,0,0,235.82,380.1L400.781,214.979l20.68,20.841,22.764-22.764-20.841-20.68,52.9-52.743a16.031,16.031,0,0,0,0-22.6ZM217.865,352.688H185.8l-41.521,41.521-25.49-25.49L160.313,327.2V295.135L320.625,134.823l57.552,57.552ZM400.781,169.771l-57.552-57.552L384.75,70.7,442.3,128.25Z" fill="#fff"/>
+      <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="513" height="513" fill="none"/>
+    </g>
+  </g>
+</svg>

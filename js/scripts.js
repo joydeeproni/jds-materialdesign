@@ -70,9 +70,9 @@
 
   var thehours = new Date().getHours();
 	var themessage;
-	var morning = ('Good morning!');
-	var afternoon = ('Good afternoon!');
-	var evening = ('Good evening!');
+	var morning = ('Good Morning!');
+	var afternoon = ('Good Afternoon!');
+	var evening = ('Good Evening!');
 
 	if (thehours >= 0 && thehours < 12) {
 		themessage = morning;
